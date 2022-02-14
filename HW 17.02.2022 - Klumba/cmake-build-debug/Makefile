@@ -128,6 +128,30 @@ HW_17_02_2022___Klumba/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW_17_02_2022___Klumba.dir\build.make CMakeFiles/HW_17_02_2022___Klumba.dir/build
 .PHONY : HW_17_02_2022___Klumba/fast
 
+Klumba.obj: Klumba.cpp.obj
+.PHONY : Klumba.obj
+
+# target to build an object file
+Klumba.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW_17_02_2022___Klumba.dir\build.make CMakeFiles/HW_17_02_2022___Klumba.dir/Klumba.cpp.obj
+.PHONY : Klumba.cpp.obj
+
+Klumba.i: Klumba.cpp.i
+.PHONY : Klumba.i
+
+# target to preprocess a source file
+Klumba.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW_17_02_2022___Klumba.dir\build.make CMakeFiles/HW_17_02_2022___Klumba.dir/Klumba.cpp.i
+.PHONY : Klumba.cpp.i
+
+Klumba.s: Klumba.cpp.s
+.PHONY : Klumba.s
+
+# target to generate assembly for a file
+Klumba.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW_17_02_2022___Klumba.dir\build.make CMakeFiles/HW_17_02_2022___Klumba.dir/Klumba.cpp.s
+.PHONY : Klumba.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... HW_17_02_2022___Klumba
+	@echo ... Klumba.obj
+	@echo ... Klumba.i
+	@echo ... Klumba.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

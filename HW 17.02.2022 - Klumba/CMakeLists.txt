@@ -3,4 +3,4 @@ project(HW_17_02_2022___Klumba)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(HW_17_02_2022___Klumba main.cpp)
+add_executable(HW_17_02_2022___Klumba main.cpp Klumba.cpp Klumba.h)

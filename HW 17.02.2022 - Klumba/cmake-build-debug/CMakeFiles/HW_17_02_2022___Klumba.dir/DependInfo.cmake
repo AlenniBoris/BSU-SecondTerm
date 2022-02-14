@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Proga for BSU/BSU-SecondTerm/HW 17.02.2022 - Klumba/Klumba.cpp" "CMakeFiles/HW_17_02_2022___Klumba.dir/Klumba.cpp.obj" "gcc" "CMakeFiles/HW_17_02_2022___Klumba.dir/Klumba.cpp.obj.d"
   "C:/Proga for BSU/BSU-SecondTerm/HW 17.02.2022 - Klumba/main.cpp" "CMakeFiles/HW_17_02_2022___Klumba.dir/main.cpp.obj" "gcc" "CMakeFiles/HW_17_02_2022___Klumba.dir/main.cpp.obj.d"
   )
 
