@@ -10,36 +10,40 @@
 #include <functional>
 
 
+
 class Flower_Kl {
-protected:
-    int Klumba_Num;
-    Shape Kl_Shape;
-    std::list<std::string> Kl_Flowers;
-
 public:
-    Flower_Kl(int Num_Kl, std::string Shape_Kl, std::list<std::string>);
-    ~Flower_Kl() = default;
-
-    int Get_Klumba_Num();
-    std::string Get_Kl_Flowers();
-    Shape Get_Klumba_Shape() const;
-
-    std::list<Flower_Kl> Klumba_From_File_To_List(std::ifstream &file);
-    std::multimap<Flower_Kl::Shape, Flower_Kl> From_List_To_Assosiation_Container(std::list<Flower_Kl> &Type_Kl);
-
-    static Flower_Kl Return_Forms(std::multimap<Flower_Kl::Shape, Flower_Kl>& container);
-    static void Return_Flowers(Flower_Kl New_Kl);
-
-
-
-//    static std::multimap<Flower_Kl::Shape, Flower_Kl> Get_Klumbs_File(const std::string &File);
-
-
+    int Klumba_Num;
     enum Shape{
         Square = 0,
         Circle = 1,
         Romb = 2
     };
+    Shape Kl_Shape;
+    std::list<std::string> Kl_Flowers;
+
+public:
+    Flower_Kl(int Num_Kl, std::string Shape_Kl, std::list<std::string> Flowers_Kl);
+    Flower_Kl() = default;
+    ~Flower_Kl() = default;
+
+    int Get_Klumba_Num();
+    std::list<std::string> Get_Kl_Flowers();
+    Shape Get_Klumba_Shape() const;
+
+    static std::list<Flower_Kl> Klumba_From_File_To_List(std::ifstream& file);
+    static std::multimap<Flower_Kl::Shape, Flower_Kl> From_List_To_Assosiation_Container(std::list<Flower_Kl> &Type_Kl);
+
+    static void Return_Forms(std::multimap<Flower_Kl::Shape, Flower_Kl>& container);
+    static void Return_Flowers(Flower_Kl New_Kl);
+
+    static std::list<Flower_Kl> Empty_Klumba(std::string flower, std::list<Flower_Kl> Klumbs);
+    static Flower_Kl Max_Flower_Num_Klumba(std::list<Flower_Kl> flowerbeds);
+
+
+    friend std::ostream& operator<< (std::ostream& out,  Flower_Kl& Klumba);
+
+
 };
 
 

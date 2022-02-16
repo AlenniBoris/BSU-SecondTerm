@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/HW_17_02_2022___Klumba.dir/Functions.cpp.obj"
+  "CMakeFiles/HW_17_02_2022___Klumba.dir/Functions.cpp.obj.d"
   "CMakeFiles/HW_17_02_2022___Klumba.dir/Klumba.cpp.obj"
   "CMakeFiles/HW_17_02_2022___Klumba.dir/Klumba.cpp.obj.d"
   "CMakeFiles/HW_17_02_2022___Klumba.dir/main.cpp.obj"

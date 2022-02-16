@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Proga for BSU/BSU-SecondTerm/HW 17.02.2022 - Klumba/Functions.cpp">
+			<Option target="HW_17_02_2022___Klumba"/>
+		</Unit>
+		<Unit filename="C:/Proga for BSU/BSU-SecondTerm/HW 17.02.2022 - Klumba/Functions.h">
+			<Option target="HW_17_02_2022___Klumba"/>
+		</Unit>
 		<Unit filename="C:/Proga for BSU/BSU-SecondTerm/HW 17.02.2022 - Klumba/Klumba.cpp">
 			<Option target="HW_17_02_2022___Klumba"/>
 		</Unit>

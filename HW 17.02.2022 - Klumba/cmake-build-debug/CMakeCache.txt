@@ -253,6 +253,15 @@ HW_17_02_2022___Klumba_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 HW_17_02_2022___Klumba_SOURCE_DIR:STATIC=C:/Proga for BSU/BSU-SecondTerm/HW 17.02.2022 - Klumba
 
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=C:/Proga for BSU/BSU-SecondTerm/HW 17.02.2022 - Klumba/cmake-build-debug
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=C:/Proga for BSU/BSU-SecondTerm/HW 17.02.2022 - Klumba
+
 
 ########################
 # INTERNAL cache entries

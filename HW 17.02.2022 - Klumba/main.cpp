@@ -1,26 +1,22 @@
-#include "Klumba.h"
+#include "Functions.h"
 
 int main() {
-    std::string str = "Square";
-    std::string str1 = "Romb";
-    std::string str2 = "Romb";
-    std::list<std::string> flow = {"rose", "dub", "bebbe"};
-    std::list<std::string> flow1 = {"ros111e", "ub", "aSDASD"};
-    std::list<std::string> flow2 = {"ro434434se", "dFWFEFEWFub", "bebASDASDe"};
-    Flower_Kl fl(1,str,flow);
-    Flower_Kl fl1(2,str1,flow1);
-    Flower_Kl fl2(3,str2,flow2);
+    std::list<Flower_Kl> New_Kls;
+    std::ifstream input("input.txt");
+    New_Kls =  Flower_Kl::Klumba_From_File_To_List(input);
+    for (Flower_Kl New_Kl : New_Kls){
+        std::cout << New_Kl;
+    }
 
-    std::list<Flower_Kl> New_Kl = {fl,fl1,fl2};
+    std::multimap<Flower_Kl::Shape, Flower_Kl> Test;
+    Test = Flower_Kl::From_List_To_Assosiation_Container(New_Kls);
+    std::cout << " Forms Test:   " << std::endl << std::endl;
+    Flower_Kl::Return_Forms(Test);
 
+    std::cout << "\n Max Number of flowers:   " << std::endl << std::endl;
+    Flower_Kl::Max_Flower_Num_Klumba(New_Kls);
 
-//    container.insert(Pair("Square", fl));
-//    container.insert(Pair("Square", fl1));
-//    container.insert(Pair("Square", fl2));
-
-
-//    Flower_Kl::Return_Forms(New_Kl);
-//    Flower_Kl::Return_Flowers(fl1);
+    std::cout << "\n Klumba by nmber:   " << std::endl << std::endl;
 
 
     return 0;
