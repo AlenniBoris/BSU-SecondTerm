@@ -1,5 +1,6 @@
 CMakeFiles/HW_17_02_2022___Klumba.dir/main.cpp.obj: \
  C:\Proga\ for\ BSU\BSU-SecondTerm\HW\ 17.02.2022\ -\ Klumba\main.cpp \
+ C:\Proga\ for\ BSU\BSU-SecondTerm\HW\ 17.02.2022\ -\ Klumba\Functions.h \
  C:\Proga\ for\ BSU\BSU-SecondTerm\HW\ 17.02.2022\ -\ Klumba\Klumba.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
