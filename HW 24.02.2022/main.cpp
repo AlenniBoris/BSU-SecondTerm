@@ -4,24 +4,23 @@ int main() {
     std::ifstream file("index.txt");
     std::list<std::string> List;
     std::vector<std::string> vector;
-    Fill_List_With_Text(file,List);
-
+    Fill_List_With_Text(file, List);
 
 
     Show_List(List);
 
     std::cout << std::endl;
-    To_New_Container(List,vector);
+    To_New_Container(List, vector);
 
     std::cout << std::endl;
-    std::cout << Count_With_Letter(List,'f');
+    std::cout << Count_With_Letter(List, 'f');
 
     std::cout << std::endl;
-    Delete_With_Letter(List,'f');
+    Delete_With_Letter(List, 'f');
     Show_List(List);
 
     std::cout << std::endl;
-    std::cout << Count_With_Letter(List,'f');
+    std::cout << Count_With_Letter(List, 'f');
 
     std::cout << std::endl;
     Show_Reverse(List);
@@ -30,7 +29,7 @@ int main() {
     Print_Unique_Alphabet(file);
 
     std::cout << std::endl;
-    Count_Double(file);
+    Count_Double();
 
     return 0;
 
