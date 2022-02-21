@@ -3,6 +3,7 @@
 int main() {
     std::ifstream file("index.txt");
     std::list<std::string> List;
+    std::vector<std::string> vector;
     Fill_List_With_Text(file,List);
 
 
@@ -10,7 +11,7 @@ int main() {
     Show_List(List);
 
     std::cout << std::endl;
-    To_New_Container();
+    To_New_Container(List,vector);
 
     std::cout << std::endl;
     std::cout << Count_With_Letter(List,'f');
@@ -28,6 +29,8 @@ int main() {
     std::cout << std::endl;
     Print_Unique_Alphabet(file);
 
+    std::cout << std::endl;
+    Count_Double(file);
 
     return 0;
 

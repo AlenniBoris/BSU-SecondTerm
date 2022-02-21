@@ -25,13 +25,6 @@ void Show_List(std::list<std::string> &List_For_Input){
     }
 }
 
-void To_New_Container(){
-    std::list<int> List_To_Copy = { 1,2,3,4 };
-    std::vector<int> Vector_Copy = { 0,0,0,0 };
-    std::copy(List_To_Copy.begin(), List_To_Copy.end(), Vector_Copy.begin());
-    Show_Vector(Vector_Copy);
-}
-
 std::list<std::string> Find_By_Letter_Func(std::list<std::string> &For_Search, char Search_Letter){
     std::list<std::string> Found_Words;
     Search search(Search_Letter);
@@ -80,27 +73,41 @@ void Show_Reverse(std::list<std::string> &List_For_Input){
     }
     std::cout << List_For_Input.front();
 }
-
 void Print_Unique_Alphabet(std::ifstream &Input_File){
-    std::string Words;
-    std::list<std::string> Unique_Words;
+    std::list<std::string> For_Unique;
+    std::copy(std::istream_iterator<std::string>(Input_File), std::istream_iterator<std::string>(), std::back_inserter(For_Unique));
+    For_Unique.unique();
+    For_Unique.sort();
+    for (std::string For_Words : For_Unique){
+        std::cout << For_Words << "\n";
+    }
+}
 
-    std::function isEndOfWord{
-            [](char& letter){return letter == ' ';}
-    };
-    while(Input_File >> Words){
-        std::string Letters;
-        for (int i = 0; i < Words.size(); ++i) {
-            if (Words[i] != ' '){
-                Letters += Words[i];
-            }
-            Unique_Words.push_back(Letters);
+void Count_Double(std::ifstream &Input_File){
+    std::list<std::string> List_Str;
+    std::copy(std::istream_iterator<std::string>(Input_File), std::istream_iterator<std::string>(), std::back_inserter(List_Str));
+    List_Str.sort();
+    std::vector<std::string> Vector_Str;
+    To_New_Container(List_Str,Vector_Str);
+    int First_Pos = 0;
+    std::vector<int> For_Count;
+    for (int i = 0; i < Vector_Str.size(); i++){
+        if (Vector_Str[i] != Vector_Str[First_Pos] || i == Vector_Str.size() - 1){
+            For_Count.push_back(i - First_Pos);
+            First_Pos = i ;
         }
     }
-    Unique_Words.unique();
-    Unique_Words.sort();
-    std::cout << "Num of unique words: " << Unique_Words.size();
-    for (std::string New_Str : Unique_Words) {
-        std::cout << New_Str << " ";
+    List_Str.unique();
+    int i = 0;
+    for (std::string string : List_Str){
+        if (i != For_Count.size() - 1)
+        {
+            std::cout << string << " - " << For_Count[i] << "\n";
+        }
+        else
+        {
+            std::cout << string << " - " << For_Count[i] + 1 << "\n";
+        }
+        ++i;
     }
 }
