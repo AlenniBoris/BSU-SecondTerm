@@ -16,14 +16,7 @@
   <component name="ChangeListManager">
     <list default="true" id="61228098-ad66-44fb-be65-7d4a37f70f1d" name="Changes" comment="final 1_2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba/Functions_With_Conteiners.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Laba/Functions_With_Conteiners.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba/Functions_With_Conteiners.h" beforeDir="false" afterPath="$PROJECT_DIR$/Laba/Functions_With_Conteiners.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba/Functions_without_Conteiners.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Laba/Functions_without_Conteiners.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba/cmake-build-debug/.cmake/api/v1/reply/cache-v2-bc6e754222f9e06da663.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Laba/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +64,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HW_24_02_2022" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HW_24_02_2022" TARGET_NAME="HW_24_02_2022" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HW_24_02_2022" RUN_TARGET_NAME="HW_24_02_2022">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -93,7 +81,9 @@
       <workItem from="1645431217329" duration="4605000" />
       <workItem from="1645441582348" duration="1911000" />
       <workItem from="1645466535046" duration="1901000" />
-      <workItem from="1645508711831" duration="4382000" />
+      <workItem from="1645508711831" duration="4667000" />
+      <workItem from="1645523631159" duration="45000" />
+      <workItem from="1645524112834" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="try 2">
       <created>1645443499700</created>
