@@ -14,17 +14,54 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61228098-ad66-44fb-be65-7d4a37f70f1d" name="Changes" comment="try 2">
+    <list default="true" id="61228098-ad66-44fb-be65-7d4a37f70f1d" name="Changes" comment="final 1_2">
+      <change afterPath="$PROJECT_DIR$/Laba/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/.idea/Laba.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/Functions_With_Conteiners.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/Functions_With_Conteiners.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/Functions_without_Conteiners.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/Functions_without_Conteiners.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/.cmake/api/v1/reply/cache-v2-bc6e754222f9e06da663.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-283726631bde1a66f36b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-2120af67d5621e174487.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/3.21.1/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/3.21.1/CMakeRCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-02-21T09-29-39-0062.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HW_24_02_2022.dir/Functions.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HW_24_02_2022.dir/Functions.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HW_24_02_2022.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HW_24_02_2022.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/HW_24_02_2022.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/HW_24_02_2022.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/index.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/index.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +103,18 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Proga for BSU\BSU-SecondTerm\HW 24.02.2022" />
+      <recent name="C:\Proga for BSU\BSU-SecondTerm\HW 24.02.2022\1_2" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HW_24_02_2022" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HW_24_02_2022" TARGET_NAME="HW_24_02_2022" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HW_24_02_2022" RUN_TARGET_NAME="HW_24_02_2022">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -83,7 +131,8 @@
       <updated>1645431215769</updated>
       <workItem from="1645431217329" duration="4605000" />
       <workItem from="1645441582348" duration="1911000" />
-      <workItem from="1645466535046" duration="1259000" />
+      <workItem from="1645466535046" duration="1901000" />
+      <workItem from="1645508711831" duration="2735000" />
     </task>
     <task id="LOCAL-00001" summary="try 2">
       <created>1645443499700</created>
@@ -92,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645443499700</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="final 1_2">
+      <created>1645468678621</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645468678621</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="try 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="try 2" />
+    <MESSAGE value="final 1_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="final 1_2" />
   </component>
 </project>

@@ -4,6 +4,8 @@ int main() {
     std::ifstream file("index.txt");
     std::list<std::string> List;
     std::vector<std::string> vector;
+
+
     Fill_List_With_Text(file, List);
 
 
