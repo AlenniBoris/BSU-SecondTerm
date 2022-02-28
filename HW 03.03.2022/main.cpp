@@ -15,26 +15,28 @@ int main() {
     list.Delete(7);
     list.Delete(5);
     list.Print();
+    std::cout <<"\nSorted list: " << std::endl;
+    list.Sort();
 
 
 
-    std::cout << std::endl;
-    std::cout << std::endl;
-
-
-    Stack<int> stack;
-    stack.Push(5);
-    stack.Push(100);
-    stack.Push(56556);
-    stack.Push(77);
-    stack.Push(1);
-    stack.Push(0);
-
-    stack.Print();
-    std::cout<<std::endl;
-    std::cout << stack.Top()<<std::endl;
-    stack.Pop();
-    stack.Print();
+//    std::cout << std::endl;
+//    std::cout << std::endl;
+//
+//
+//    Stack<int> stack;
+//    stack.Push(5);
+//    stack.Push(100);
+//    stack.Push(56556);
+//    stack.Push(77);
+//    stack.Push(1);
+//    stack.Push(0);
+//
+//    stack.Print();
+//    std::cout<<std::endl;
+//    std::cout << stack.Top()<<std::endl;
+//    stack.Pop();
+//    stack.Print();
 
     return 0;
 }

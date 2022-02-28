@@ -2,6 +2,7 @@
 #define HW_03_03_2022_LIST_H
 
 #include "iostream"
+#include "vector"
 
 
 template<typename T>
@@ -19,10 +20,15 @@ private:
 public:
     list() : size_(0), head_(nullptr){};
 
-    void Push(const T& data);
+//    T GetValue(){
+//        Node<T>* Temp_N = head_;
+//        return Temp_N->value_;
+//    };
+    virtual void Push(const T& data);
     void Print();
     void  Delete(const T& elem);
     T Front();
+//    void Sort();
 
 };
 
@@ -74,6 +80,33 @@ T list<T>::Front() {
     --size_;
     return Temp_N->value_;
 }
+
+//template<typename T>
+//void list<T>::Sort() {
+//    std::vector<T> For_Sort;
+//    Node<T>* Temp_N = head_;
+//    for (int i = 0; i < size_; ++i) {
+//        For_Sort.push_back(Temp_N->value_);
+//        Temp_N = Temp_N->next_;
+//
+//    }
+//    for (int j = 0; j < For_Sort.size(); ++j) {
+//        if (For_Sort[j-1] >= For_Sort[j]){
+//            std::swap(For_Sort[j-1],For_Sort[j]);
+//        }
+//    }
+//    for (int k = 0; k < For_Sort.size(); ++k) {
+//        std::cout << For_Sort[k] << ' ';
+//    }
+//
+
+//    Node<T>* Temp_N = head_;
+//    for (int i = 0; i < size_-1; i++) {
+//        if (Temp_N->value_ >= Temp_N->next_->value_){
+//            std::swap(Temp_N->value_,Temp_N->next_->value_);
+//        }
+//    }
+//}
 
 
 #endif //HW_03_03_2022_LIST_H
