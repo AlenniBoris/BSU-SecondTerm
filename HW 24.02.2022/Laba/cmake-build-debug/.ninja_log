@@ -1,0 +1,20 @@
+# ninja log v5
+542	636	6672255408131838	Laba.exe	f451500a8bf27461
+2	542	6672255407148544	CMakeFiles/Laba.dir/main.cpp.obj	38cba6dc6e854c17
+7	1087	6672253906587566	CMakeFiles/Laba.dir/Functions_without_Conteiners.cpp.obj	c752f9684130766e
+2	608	6672255341537121	CMakeFiles/Laba.dir/Functions_With_Conteiners.cpp.obj	ef3c694282dfa940
+1	98	6672273404552955	build.ninja	42a73b1b5f5ca7bd
+5	867	6672280547641632	CMakeFiles/Laba.dir/Functions_With_Conteiners.cpp.obj	ef3c694282dfa940
+3	867	6672280547652939	CMakeFiles/Laba.dir/main.cpp.obj	38cba6dc6e854c17
+6	875	6672280547734749	CMakeFiles/Laba.dir/Functions_without_Conteiners.cpp.obj	c752f9684130766e
+875	990	6672280548846290	Laba.exe	f451500a8bf27461
+2	553	6672280723027192	CMakeFiles/Laba.dir/Functions_With_Conteiners.cpp.obj	ef3c694282dfa940
+553	652	6672280724004766	Laba.exe	f451500a8bf27461
+2	552	6672280909326832	CMakeFiles/Laba.dir/main.cpp.obj	38cba6dc6e854c17
+552	650	6672280910293390	Laba.exe	f451500a8bf27461
+2	531	6672281092390968	CMakeFiles/Laba.dir/main.cpp.obj	38cba6dc6e854c17
+532	624	6672281093282620	Laba.exe	f451500a8bf27461
+2	546	6672281284489790	CMakeFiles/Laba.dir/main.cpp.obj	38cba6dc6e854c17
+546	637	6672281285377106	Laba.exe	f451500a8bf27461
+2	587	6672281483883856	CMakeFiles/Laba.dir/Functions_With_Conteiners.cpp.obj	ef3c694282dfa940
+587	681	6672281484805500	Laba.exe	f451500a8bf27461
