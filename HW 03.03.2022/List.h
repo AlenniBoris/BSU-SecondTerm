@@ -14,21 +14,18 @@ struct Node{
 
 template<typename T>
 class list{
-private:
+protected:
     Node<T> *head_;
     int size_;
 public:
     list() : size_(0), head_(nullptr){};
 
-//    T GetValue(){
-//        Node<T>* Temp_N = head_;
-//        return Temp_N->value_;
-//    };
+
     virtual void Push(const T& data);
     void Print();
     void  Delete(const T& elem);
     T Front();
-//    void Sort();
+    void Sort(list<T>& Start_list);
 
 };
 
@@ -81,15 +78,21 @@ T list<T>::Front() {
     return Temp_N->value_;
 }
 
-//template<typename T>
-//void list<T>::Sort() {
-//    std::vector<T> For_Sort;
-//    Node<T>* Temp_N = head_;
-//    for (int i = 0; i < size_; ++i) {
-//        For_Sort.push_back(Temp_N->value_);
-//        Temp_N = Temp_N->next_;
-//
-//    }
+template<typename T>
+void list<T>::Sort(list<T> &Start_list) {
+    Node<T> *Temp_N = head_;
+    list<T> New_l;
+    for (int i = 0; i < size_ - 1; ++i) {
+        if (Temp_N->value_ >= Temp_N->next_->value_){
+            New_l.Push(Temp_N->next_->value_);
+            New_l.Push(Temp_N->value_);
+
+        }
+        Temp_N = Temp_N->next_;
+    }
+    Start_list = New_l;
+}
+
 //    for (int j = 0; j < For_Sort.size(); ++j) {
 //        if (For_Sort[j-1] >= For_Sort[j]){
 //            std::swap(For_Sort[j-1],For_Sort[j]);
