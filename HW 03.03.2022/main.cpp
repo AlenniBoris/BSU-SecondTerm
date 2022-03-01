@@ -1,6 +1,5 @@
 #include "List.h"
-#include "Sorted_List.h"
-#include "Stack.h"
+#include "Sorted_list.h"
 
 int main() {
     list<int> list;
@@ -12,31 +11,20 @@ int main() {
     list.Push(15);
     list.Push(2);
     list.Print();
-
-    std::cout <<"\nSorted list: " << std::endl;
-    list.Sort(list);
+    std::cout<<std::endl;
+    list.Delete(15);
     list.Print();
 
-
-
-
-//    std::cout << std::endl;
-//    std::cout << std::endl;
-//
-//
-//    Stack<int> stack;
-//    stack.Push(5);
-//    stack.Push(100);
-//    stack.Push(56556);
-//    stack.Push(77);
-//    stack.Push(1);
-//    stack.Push(0);
-//
-//    stack.Print();
-//    std::cout<<std::endl;
-//    std::cout << stack.Top()<<std::endl;
-//    stack.Pop();
-//    stack.Print();
+    std::cout <<"\nSorted list: " << std::endl;
+    Sorted_list<int> list1;
+    list1.Push(10);
+    list1.Push(3);
+    list1.Push(5);
+    list1.Push(13);
+    list1.Push(12);
+    list1.Push(15);
+    list1.Push(2);
+    list1.Print();
 
     return 0;
 }

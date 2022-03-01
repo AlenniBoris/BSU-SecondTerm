@@ -9,39 +9,46 @@ template<typename T>
 struct Node{
     T value_;
     Node* next_;
-    Node(Node* next, T value) : next_(next), value_(value) {};
+    Node() = default;
 };
 
-template<typename T>
+template<class T>
 class list{
 protected:
     Node<T> *head_;
     int size_;
 public:
-    list() : size_(0), head_(nullptr){};
+    list() : size_(0){ head_ = nullptr; };
 
+    ~list(){
+        Node<T>* Temp_N = head_;
+        for (int i = 0; i < size_ - 1; ++i) {
+            delete Temp_N->next_;
+        }
+        delete head_;
+    }
 
-    virtual void Push(const T& data);
+    virtual void Push(T data);
     void Print();
     void  Delete(const T& elem);
     T Front();
-    void Sort(list<T>& Start_list);
-
 };
 
 template<typename T>
-void list<T>::Push(const T& data) {
-    if (size_ == 0){
-        Node<T>* N_head = new Node<T>(nullptr, data);
-        head_ = N_head;
-    } else{
-        Node<T>* Temp_N = head_;
-        for (int i = 0; i < size_ - 1; i++) {
-            Temp_N = Temp_N->next_;
-        }
-        Node<T>* N_Node = new Node<T>(nullptr, data);
-        Temp_N->next_ = N_Node;
+void list<T>::Push(T data) {
+    Node<T>* N_Node = new(Node<T>);
+    N_Node->next_ = nullptr;
+    N_Node->value_ = data;
+    Node<T>* Temp_N = head_;
+    if (head_ == nullptr){
+        head_ = N_Node;
+        ++size_;
+        return;
     }
+    for (int i = 0; i < size_ - 1; ++i) {
+        Temp_N = Temp_N->next_;
+    }
+    Temp_N->next_ = N_Node;
     ++size_;
 }
 
@@ -78,38 +85,6 @@ T list<T>::Front() {
     return Temp_N->value_;
 }
 
-template<typename T>
-void list<T>::Sort(list<T> &Start_list) {
-    Node<T> *Temp_N = head_;
-    list<T> New_l;
-    for (int i = 0; i < size_ - 1; ++i) {
-        if (Temp_N->value_ >= Temp_N->next_->value_){
-            New_l.Push(Temp_N->next_->value_);
-            New_l.Push(Temp_N->value_);
-
-        }
-        Temp_N = Temp_N->next_;
-    }
-    Start_list = New_l;
-}
-
-//    for (int j = 0; j < For_Sort.size(); ++j) {
-//        if (For_Sort[j-1] >= For_Sort[j]){
-//            std::swap(For_Sort[j-1],For_Sort[j]);
-//        }
-//    }
-//    for (int k = 0; k < For_Sort.size(); ++k) {
-//        std::cout << For_Sort[k] << ' ';
-//    }
-//
-
-//    Node<T>* Temp_N = head_;
-//    for (int i = 0; i < size_-1; i++) {
-//        if (Temp_N->value_ >= Temp_N->next_->value_){
-//            std::swap(Temp_N->value_,Temp_N->next_->value_);
-//        }
-//    }
-//}
 
 
 #endif //HW_03_03_2022_LIST_H
