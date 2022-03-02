@@ -55,6 +55,12 @@ build CMakeFiles/HW_03_03_2022.dir/main.cpp.obj: CXX_COMPILER__HW_03_03_2022_Deb
   OBJECT_DIR = CMakeFiles\HW_03_03_2022.dir
   OBJECT_FILE_DIR = CMakeFiles\HW_03_03_2022.dir
 
+build CMakeFiles/HW_03_03_2022.dir/Polish.cpp.obj: CXX_COMPILER__HW_03_03_2022_Debug C$:/Proga$ for$ BSU/BSU-SecondTerm/HW$ 03.03.2022/Polish.cpp || cmake_object_order_depends_target_HW_03_03_2022
+  DEP_FILE = CMakeFiles\HW_03_03_2022.dir\Polish.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\HW_03_03_2022.dir
+  OBJECT_FILE_DIR = CMakeFiles\HW_03_03_2022.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target HW_03_03_2022
@@ -63,7 +69,7 @@ build CMakeFiles/HW_03_03_2022.dir/main.cpp.obj: CXX_COMPILER__HW_03_03_2022_Deb
 #############################################
 # Link the executable HW_03_03_2022.exe
 
-build HW_03_03_2022.exe: CXX_EXECUTABLE_LINKER__HW_03_03_2022_Debug CMakeFiles/HW_03_03_2022.dir/main.cpp.obj
+build HW_03_03_2022.exe: CXX_EXECUTABLE_LINKER__HW_03_03_2022_Debug CMakeFiles/HW_03_03_2022.dir/main.cpp.obj CMakeFiles/HW_03_03_2022.dir/Polish.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\HW_03_03_2022.dir

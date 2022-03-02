@@ -11,12 +11,18 @@ private:
 public:
     Stack() : stack_(), size_(0) {};
 
+    int Get_Size();
     void Push(T data);
     void Pop();
     T Top();
     void Print();
 
 };
+
+template<typename T>
+int Stack<T>::Get_Size() {
+    return size_;
+}
 
 template<typename T>
 void Stack<T>::Push(T data) {
@@ -42,6 +48,7 @@ void Stack<T>::Print() {
         std::cout << this->Top() << ' ';
     }
 }
+
 
 
 
