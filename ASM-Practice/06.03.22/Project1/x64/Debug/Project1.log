@@ -1,0 +1,29 @@
+﻿  main.cpp
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(8,2): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(9,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(9,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(9,7): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(10,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "add"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(10,3): error C2065: add: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(10,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(10,7): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(11,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "imul"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(11,3): error C2065: imul: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(11,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "a"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(12,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(12,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(12,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(12,7): error C2065: ebx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(13,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "imul"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(13,3): error C2065: imul: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(13,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "var1"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(14,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "add"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(14,3): error C2065: add: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(14,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(14,7): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(14,12): error C2065: ebx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(15,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(15,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(15,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "res"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(15,12): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\06.03.22\Project1\main.cpp(18,2): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
