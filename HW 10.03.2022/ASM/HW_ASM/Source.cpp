@@ -1,6 +1,6 @@
 #include <iostream>
 
-void Change_words3_1() {
+void Change_words3() {
 	short int F_w = 1, S_w = 2;
 	
 	std::cout << "Before swap: " << F_w << " " << S_w << std::endl;
@@ -38,7 +38,7 @@ void Solve_equation4() {
 	std::cout << "remnant part: " << Rem_part << std::endl;
 }
 
-void Solve_equation5() { //Ïîñîìüòðåòü ïîçæå åùå ðàç
+void Solve_equation5() { //ÃÃ®Ã±Ã®Ã¬Ã¼Ã²Ã°Ã¥Ã²Ã¼ Ã¯Ã®Ã§Ã¦Ã¥ Ã¥Ã¹Ã¥ Ã°Ã Ã§
 	int a = 100, b = 10, c = 10, x;
 	int res1, res2, res;
 
