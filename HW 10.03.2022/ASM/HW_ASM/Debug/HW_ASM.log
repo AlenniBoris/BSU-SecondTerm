@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(151): warning C4409: недопустимый размер инструкции
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(170,3): warning C4102: beg_: неиспользованная метка
+  HW_ASM.vcxproj -> C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Debug\HW_ASM.exe
