@@ -9,7 +9,7 @@ template<typename T>
 struct Node{
     T value_;
     Node* next_;
-    Node() = default;
+    Node(Node* next, T data) : next_(next), value_(data) {};
 };
 
 template<class T>
@@ -18,6 +18,29 @@ protected:
     Node<T> *head_;
     int size_;
 public:
+    class iterator: public std::iterator<std::forward_iterator_tag, T>{
+    public:
+        Node<T>* node_;
+        iterator(Node<T>* node = nullptr) : node_(node) {};
+        bool operator==(const iterator& node)
+        {
+            return node_ == node.node_;
+        }
+        bool operator!=(const iterator& node)
+        {
+            return node != *this;
+        }
+        iterator& operator=(const iterator& node) {
+            if (this != node)
+                node_ = node.node_;
+            return *this;
+        }
+        const iterator& operator++() {
+            node_ = node_->next;
+            return *this;
+        }
+    };
+
     list() : size_(0){ head_ = nullptr; };
 
     ~list(){
@@ -28,27 +51,25 @@ public:
         delete head_;
     }
 
-    virtual void Push(T data);
+    void Push(T& data);
     void Print();
     void  Delete(const T& elem);
     T Front();
 };
 
 template<typename T>
-void list<T>::Push(T data) {
-    Node<T>* N_Node = new(Node<T>);
-    N_Node->next_ = nullptr;
-    N_Node->value_ = data;
-    Node<T>* Temp_N = head_;
-    if (head_ == nullptr){
+void list<T>::Push(T& data) {
+    if (size_ == 0){
+        Node<T>* N_Node = new Node<T>(nullptr, data);
         head_ = N_Node;
-        ++size_;
-        return;
+    }else{
+        Node<T>* T_Node = head_;
+        for (int i = 0; i < size_ - 1; ++i) {
+            T_Node = T_Node->next_;
+        }
+        Node<T>* N_Node = new Node<T>(nullptr, data);
+        T_Node->next_ = N_Node;
     }
-    for (int i = 0; i < size_ - 1; ++i) {
-        Temp_N = Temp_N->next_;
-    }
-    Temp_N->next_ = N_Node;
     ++size_;
 }
 

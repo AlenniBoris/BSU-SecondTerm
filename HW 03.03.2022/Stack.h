@@ -33,6 +33,7 @@ void Stack<T>::Push(T data) {
 template<typename T>
 void Stack<T>::Pop() {
     stack_.Front();
+    --size_;
 }
 
 template<typename T>
