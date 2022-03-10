@@ -154,8 +154,8 @@ void Find_degree9() {
 
 	_asm {
 		mov eax, 1
-		movsx cl, Deg_n
-		shl eax, cl
+		//movsx cl, Deg_n
+		shl eax, 2
 		mov res, eax
 	}
 
@@ -186,5 +186,5 @@ void Get_bit_def1() {
 }
 
 int main() {
-	Solve_equation5();
+	Find_degree9();
 }
