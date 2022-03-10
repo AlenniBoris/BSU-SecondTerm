@@ -39,31 +39,37 @@ void Solve_equation4() {
 }
 
 void Solve_equation5() { //Ïîñîìüòðåòü ïîçæå åùå ðàç
-	int a = 100, b = 10, c = 10, x;
-	int res1, res2, res;
+	int a = 10, b = 10, c = 10, x, Mult_num = 2, Sub_num = 12;
+	int res;
 
 	std::cout << "Enter some integer x: " << std::endl;
 	std::cin >> x;
 
 	_asm {
 
-		mov eax, x
-		sub eax, 12
-		mov res1, eax
+		mov eax, a; eax < -a
+		imul eax, Mult_num; (2 * a)
+		imul eax, c; (2 * a)* c
+		mov edi, eax;
 
-		mov eax, c
-		imul x
-		add eax, a
-		imul res1
-		mov res2, eax
-		
-		mov eax, 2
-		imul a
-		imul c
-		sub eax, b
-		idiv res2	
+		mov eax, b
+		mov ecx, 1
+		imul ecx
+		idiv x
+		mov esi, eax
+
+		sub edi, esi
+		sub edi, Sub_num
+
+		mov eax, c; eax < -c
+		imul x; c* x
+		add eax, a; (c * x) + a
+
+		mov ebx, eax
+		mov eax, edi
+		idiv ebx
 		mov res, eax
-
+ 
 	}
 
 	std::cout << "Your result: " << res << std::endl;
@@ -180,5 +186,5 @@ void Get_bit_def1() {
 }
 
 int main() {
-	Get_bit_def1();
+	Solve_equation5();
 }

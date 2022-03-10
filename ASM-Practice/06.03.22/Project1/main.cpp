@@ -2,26 +2,34 @@
 
 int main() {
 	
-	int res_1, res_2, var1 = -30,var2 = -12 ;
-	short int a = 3;
-	char c = 3;
-	__asm {
+    int a = 10, b = 4, c = -3, x = 2, result;
+    _asm
+    {
+        mov eax, a; eax < -a
+        imul eax, c; eax < -a * c
+        imul eax, 2; eax < -2 * a * c
+        mov edi, eax; ebx < -2 * a * c
+
+        mov eax, b
+        mov ecx, 1
+        imul ecx
+        idiv x
+        mov esi, eax; esi < -b / x
+
+        sub edi, esi
+        sub edi, 12; edi < -2 * a * c - b / x - 12
+
+        mov eax, c
+        imul x
+        add eax, a; eax < -c * x + a
+
+        mov ebx, eax
+        mov eax, edi
+
+        idiv ebx; eax < -(2 * a * c - b / x - 12) / (c * x + a)
+
+        mov result, eax
 
 
-		movsx eax, var1;
-		movsx ebx, c;
-		add eax, ebx;
-		imul a;
-		mov res_1, eax;
-
-		movsx eax, var2;
-		imul c;
-
-		add res_1, eax;
-
-	}
-
-	std::cout << "Result: " << res_1;
-
-	return 0;
+    }
 }
