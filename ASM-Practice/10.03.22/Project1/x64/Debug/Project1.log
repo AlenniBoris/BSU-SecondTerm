@@ -1,0 +1,42 @@
+﻿  Source.cpp
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(9,2): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(10,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(10,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(10,7): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(10,15): error C2065: ecx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(10,20): error C2065: sum: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(11,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(11,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(11,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ecx"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(11,7): error C2065: ecx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(11,15): error C2065: ecx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(11,21): error C2065: i: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(12,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "met_start"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(12,3): error C2065: met_start: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(13,4): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "cmp"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(13,4): error C2065: cmp: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(13,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ecx"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(13,8): error C2065: ecx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(13,16): error C2065: check: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(14,4): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "jnl"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(14,4): error C2065: jnl: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(14,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "met_end"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(14,8): error C2065: met_end: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(15,4): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "add"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(15,4): error C2065: add: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(15,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(15,8): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(15,15): error C2065: ecx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(16,4): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "inc"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(16,4): error C2065: inc: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(16,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ecx"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(16,8): error C2065: ecx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(17,4): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "jmp"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(17,4): error C2065: jmp: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(17,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "met_start"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(17,8): error C2065: met_start: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(18,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "met_end"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(19,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(19,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "res"
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(19,12): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\10.03.22\Project1\Source.cpp(20,2): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"

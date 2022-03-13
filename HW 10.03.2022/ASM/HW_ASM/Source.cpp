@@ -154,7 +154,6 @@ void Find_degree9() {
 
 	_asm {
 		mov eax, 1
-		//movsx cl, Deg_n
 		shl eax, 2
 		mov res, eax
 	}
