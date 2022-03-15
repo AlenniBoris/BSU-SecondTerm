@@ -3,9 +3,8 @@
 
 
 void task_1() {
-	int numer_ = -115, denom_ = 5, NOD;
-	assert(denom_ > 0);
-	assert(numer_ > 0);
+	unsigned int numer_ = 115, denom_ = 8954, NOD;
+	assert(denom_ != 0);
 	__asm{
 		mov eax, numer_
 		cmp eax, denom_; numer_ != denom_
@@ -98,10 +97,96 @@ void task_2(){
 	std::cout << count_ << std::endl;
 }
 void task_3() {}
-void task_4() {}
-void task_5() {}
+void task_4() {
+	int Arr[10] = { 1,2,3,3,4,4,4,5,9,10 };
+	int max_num = 1, first = 0, length = 1;
+	__asm {
+		mov ecx, 0
+		beg:
+		cmp ecx, 10
+		jge end
+			mov eax, Arr[ecx*4]
+			mov ebx, Arr[ecx*4 + 4]
+			cmp eax, ebx
+			mov length, 1
+			jne not_found_eq; прыгает если не находит равные элементы
+				mov first, ecx
+				mov ebx, ecx
+				beg_:
+					mov eax, Arr[ebx*4]
+					cmp eax, Arr[ecx*4]
+					jne end_
+						inc length
+						inc ebx
+						jmp beg_
+				end_:
+				mov ecx, ebx
+				mov ebx, length
+				cmp ebx,max_num
+				jle max_l
+					mov max_num, ebx
+				max_l:
+					inc ecx
+			not_found_eq:
+				inc ecx
+				jmp beg
+		end:
+	}
+}
+void task_5() {
+	int Arr[10] = { 1,1,1,2,2,3,4,5,6,6 };
+	int newArr[6];
+	int b = 0;
+	int flag = 1;
+	__asm {
+		mov ecx, 0
+		mov eax, b
+		beg:
+		cmp ecx, 10
+		jge end; переход в конец когда i=10
+			mov flag, 1
+			mov ebx, 0
+			beg_:
+				cmp ebx, eax
+				jg end_; переход в конец когда j>b
+					mov edx, Arr[ecx*4]
+					cmp eax,0 
+					jne nzero_b
+						mov newArr[eax*4], edx
+						inc eax
+						mov flag, 0
+						jmp end_
+					nzero_b:
+
+					cmp edx, newArr[ebx*4]
+					jne neq_arr
+						mov flag, 0
+						jmp end_
+					neq_arr:
+
+				inc ebx		
+				jmp beg_
+			end_:
+			cmp flag, 1
+			jne tr_fl
+				mov newArr[eax*4], edx
+				inc eax
+			tr_fl:
+
+		inc ecx
+		jmp beg
+		end:
+
+	}
+	for (size_t i = 0; i < 6; i++)
+	{
+		std::cout << newArr[i] << ' ';
+	}
+}
 
 
 int main() {
-	task_4();
+
+	task_5();
+	
 }

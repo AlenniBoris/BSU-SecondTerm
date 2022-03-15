@@ -1,2 +1,4 @@
 ﻿  Source.cpp
-  Project1.vcxproj -> C:\Proga for BSU\BSU-SecondTerm\HW 17.03.2022\Project1\Debug\Project1.exe
+C:\Proga for BSU\BSU-SecondTerm\HW 17.03.2022\Project1\Source.cpp(111,4): error C2400: синтаксическая ошибка во встроенном коде на языке ассемблера в "первый операнд"; обнаружено ","
+C:\Proga for BSU\BSU-SecondTerm\HW 17.03.2022\Project1\Source.cpp(119,7): error C2400: синтаксическая ошибка во встроенном коде на языке ассемблера в "первый операнд"; обнаружено "newline"
+C:\Proga for BSU\BSU-SecondTerm\HW 17.03.2022\Project1\Source.cpp(124,5): error C2400: синтаксическая ошибка во встроенном коде на языке ассемблера в "второй операнд"; обнаружено "newline"
