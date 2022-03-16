@@ -8,8 +8,7 @@ void task_1() {
 	__asm {
 		mov eax, numer_
 		cmp eax, denom_; numer_ != denom_
-		jne not_eq ; прыгать если они не равны
-		; Операции если они равны
+		jne not_eq ;
 		mov eax, numer_
 		cdq
 		idiv numer_
@@ -18,11 +17,11 @@ void task_1() {
 		cdq
 		idiv eax
 		mov denom_, eax
-		jmp end_; заканчивает прогу
+		jmp end_; 
 		not_eq :
 		mov eax, numer_
 			cmp eax, denom_;
-		jg num_gr_den; прыгает, если числитель больше знаменателя
+		jg num_gr_den;
 			beg_1 :
 		mov eax, denom_
 			cmp eax, 0
@@ -84,7 +83,7 @@ void task_2() {
 		mov edi, 0
 		beg_:
 		cmp eax, 0
-			je end_; прыгает если не равно 0
+			je end_; 
 			mov ecx, 1
 			imul ecx
 			mov ecx, 2
@@ -96,7 +95,47 @@ void task_2() {
 	}
 	std::cout << count_ << std::endl;
 }
-void task_3() {}
+int task_3() {
+	int Arr[10] = { 1,2,3,5,7,8,8,2,7,9 };
+	int left_b = -1, right_b = 9, s_num = 3, pos_;
+	__asm {
+		mov ebx, right_b
+		sub ebx, left_b
+	beg_:
+		cmp ebx, 1
+		jle end_
+			mov eax, left_b
+			add eax, right_b
+			mov ecx, 1
+			mul ecx
+			inc ecx
+			div ecx
+			mov ecx,s_num
+			cmp ecx, Arr[eax*4]
+			jnle lower_n
+					mov right_b, eax
+					jmp start_
+			lower_n:
+					mov left_b, eax
+			start_:
+					mov ebx, right_b
+					sub ebx, left_b
+					jmp beg_
+	end_:
+		cmp ecx, Arr[eax*4]
+			jne no_eq
+				mov ebx, right_b
+				mov pos_, ebx
+				inc pos_
+				jmp end
+			no_eq:
+				mov pos_, 1
+				neg pos_
+		end:
+					
+	}
+	std::cout << pos_;
+}
 void task_4() {
 	const int n = 10;
 	int Arr[10] = { 1,2,3,3,4,4,4,5,9,10 };
@@ -144,12 +183,12 @@ void task_5() {
 		mov eax, b
 		beg :
 		cmp ecx, 10
-			jge end; переход в конец когда i = 10
+			jge end;
 			mov flag, 1
 			mov ebx, 0
 			beg_:
 		cmp ebx, eax
-			jg end_; переход в конец когда j > b
+			jg end_;
 			mov edx, Arr[ecx * 4]
 			cmp eax, 0
 			jne nzero_b
@@ -187,7 +226,5 @@ void task_5() {
 
 
 int main() {
-
-	task_4();
-
+	task_3();
 }
