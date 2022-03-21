@@ -1,0 +1,107 @@
+﻿  Source.cpp
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(8,2): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(9,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(9,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ax"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(9,7): error C2065: ax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(10,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(10,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(10,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "bx"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(10,7): error C2065: bx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(11,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(11,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(11,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "F_w"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(11,12): error C2065: bx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(12,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(12,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(12,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "S_w"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(12,12): error C2065: ax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(13,2): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(25,2): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(27,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(27,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(27,7): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(28,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "neg"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(28,3): error C2065: neg: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(28,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(28,7): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(29,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(29,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(29,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(29,7): error C2065: ebx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(30,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(30,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(30,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ecx"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(30,7): error C2065: ecx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(31,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "imul"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(31,3): error C2065: imul: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(31,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ecx"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(31,8): error C2065: ecx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(32,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "idiv"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(32,3): error C2065: idiv: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(32,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "a"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(33,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(33,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(33,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "Int_part"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(33,17): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(34,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(34,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(34,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "Rem_part"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(34,17): error C2065: edx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(35,2): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(48,2): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(50,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(50,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(50,7): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(50,15): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(51,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "imul"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(51,3): error C2065: imul: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(51,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(51,8): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(52,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "imul"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(52,3): error C2065: imul: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(52,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(52,8): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(53,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(52,23): warning C4552: "*": результат выражения не используется
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(53,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(53,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edi"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(53,7): error C2065: edi: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(53,12): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(55,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(55,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(55,7): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(56,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(56,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(56,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ecx"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(56,7): error C2065: ecx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(57,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "imul"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(57,3): error C2065: imul: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(57,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ecx"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(57,8): error C2065: ecx: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(58,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "idiv"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(58,3): error C2065: idiv: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(58,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "x"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(59,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(59,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(59,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "esi"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(59,7): error C2065: esi: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(59,12): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(61,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "sub"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(61,3): error C2065: sub: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(61,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edi"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(61,7): error C2065: edi: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(61,12): error C2065: esi: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(62,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "sub"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(62,3): error C2065: sub: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(62,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edi"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(62,7): error C2065: edi: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(64,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(64,3): error C2065: mov: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(64,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(64,7): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(64,15): error C2065: eax: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(65,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "imul"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(65,3): error C2065: imul: необъявленный идентификатор
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(65,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "x"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(66,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "add"
+C:\Proga for BSU\BSU-SecondTerm\HW 10.03.2022\ASM\HW_ASM\Source.cpp(66,7): fatal error C1003: число ошибок превышает 100; остановка компиляции
