@@ -12,7 +12,7 @@ void task5() {
 		c[i] = a[i];
 	}
 	for (int i = 6; i < 11; i++)
-	{	
+	{
 		c[i] = b[i - 6];
 	}
 	for (int i = 0; i < 11; i++)
@@ -23,7 +23,6 @@ void task5() {
 
 void task4() {
 	int a[6] = { 3,3,4,4,5,5 };
-	int b[4];
 	int count = 1, j;
 	
 	for (int i = 1; i < 6; ++i) {
@@ -36,8 +35,31 @@ void task4() {
 			count++;
 		}	
 	}
-	std::cout << std::endl;
-	std::cout << count;
+	std::cout << count << std::endl;
+
+	int b[4];
+	b[0] = count;
+	int current = 1;
+	for (int i = 0; i < 6; ++i)
+	{
+		bool flag = false;
+		for (int j = 1; j < current; ++j)
+		{
+			if (b[j] == a[i])
+				flag = true;
+		}
+		if (!flag)
+		{
+			b[current] = a[i];
+			++current;
+		}
+	}
+	
+	for (int i = 0; i < 4; i++)
+	{
+		std::cout << b[i] << std::endl;
+	}
+
 }
 
 //ASM
@@ -47,9 +69,9 @@ int Find_max(int first, int second) {
 }
 
 void task_1(){
-	const char* str1 = "I am";
+	const char* str1 = "1";
 	int length1 = std::strlen(str1);
-	const char* str2 = "I amh";
+	const char* str2 = "2";
 	int length2 = std::strlen(str2);
 	int bord = Find_max(length1, length2);
 	int i = 0;
@@ -83,35 +105,41 @@ void task_1(){
 
 void task_2() {
 	const int n = 3;
-	int a[n][n] = { 
-		{-1,5,0},
-		{0,1,10},
-		{122,1022,1} };
+	int a[n][n] = {
+		{-10,5,0},
+		{0,10,10},
+		{122,1022,333} };
 	int res = 0;
-	for (int i = 0; (i < n) ; i++)
+	/*for (int i = 0; i < n ; i++)
 	{
-		res += a[i][i];		
-	}
+		res += a[i][i];
+	}*/
 	/*int i = 0;
 	while (i < n) {
 		res += a[i][i];
 		i++;
 	}*/
-	/*__asm {
+	int i = 0;
+	__asm {
+		mov ecx, i
 		beg:
-			mov ecx,i
 			cmp ecx, n
 			jge gr_or_eq
-				mov esi, ecx
-				mov eax,res
-				add eax, a[esi*4]
+				mov edi, ecx //i*4
+				imul edi, 4
+				mov esi, n//n
+				imul esi, edi//n*i*4
+				add esi, edi//n*i*4 + i*4
+
+				mov eax, res
+				add eax, a[esi]	
 				mov res, eax
+
 				inc ecx
 				jmp beg
-			gr_or_eq:
+				gr_or_eq :
 		end:
-	}*/
-	
+	}
 	std::cout << res;
 }
 
