@@ -1,7 +1,79 @@
 #include "iostream"
-#include <algorithm>
+#include "algorithm"
+#include "cassert"
 
-//task 1-3 in h/w 17.03.2022
+
+void task1() {
+	unsigned int numer_ = 15, denom_ = 5, NOD = 0;
+	int def1 = 0;
+	assert(denom_ != 0);
+	if (numer_ == denom_) {
+		numer_ = 1;
+		denom_ = 1;
+	}
+	else {
+		if (numer_ < denom_) {
+			while (denom_ > 0) {
+				def1 = denom_ - numer_;
+				if (def1 > numer_) {
+					NOD = numer_;
+					break;
+				}
+				else {
+					denom_ = numer_;
+					numer_ = def1;
+				}
+			}
+		}
+		else {
+			while (numer_ > 0) {
+				def1 = numer_ - denom_;
+				if (def1 > denom_) {
+					NOD = denom_;
+					break;
+				}
+				else {
+					numer_ = denom_;
+					denom_ = def1;
+				}
+			}
+		}
+		numer_ = numer_ / NOD;
+		denom_ = denom_ / NOD;
+	}
+	std::cout << numer_ << '/' << denom_;
+}
+
+void task2() {
+	int num_ = 4654, count_ = 0, ost = 0, quot = 0;
+	//CPP
+	while (num_ != 0) {
+		num_ = num_ / 2;
+		count_++;
+	}
+}
+
+void task3() {
+	int Arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	std::sort(Arr, Arr + 10);
+	int left = 0, right = 9, num = 3;
+	int pos;
+	//CPP
+	int mid;
+	while (left <= right) {
+		mid = (right - left) / 2 + left;
+		if (num == Arr[mid]) {
+			std::cout << mid << std::endl;
+			break;
+		}
+		else if (num < Arr[mid]) {
+			right = mid - 1;
+		}
+		else {
+			left = mid + 1;
+		}
+	}
+}
 
 void task5() {
 	int a[6] = { 1,2,3,4,5,6 };
@@ -197,6 +269,6 @@ void task_3() {
 
 
 int main() {
-	task_3();
+	task1();
 	return 0;
 }
