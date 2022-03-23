@@ -1,4 +1,4 @@
 ﻿  Source.cpp
 C:\Proga for BSU\BSU-SecondTerm\HW 24.03.2022\Project1\Source.cpp(87,3): warning C4102: beg: неиспользованная метка
-C:\Proga for BSU\BSU-SecondTerm\HW 24.03.2022\Project1\Source.cpp(141,3): warning C4102: end: неиспользованная метка
+C:\Proga for BSU\BSU-SecondTerm\HW 24.03.2022\Project1\Source.cpp(140,3): warning C4102: end: неиспользованная метка
   Project1.vcxproj -> C:\Proga for BSU\BSU-SecondTerm\HW 24.03.2022\Project1\Debug\Project1.exe

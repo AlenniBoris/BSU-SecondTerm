@@ -64,16 +64,16 @@ void task4() {
 
 //ASM
 
-int Find_max(int first, int second) {
-	return std::max(first, second);
+int Find_min(int first, int second) {
+	return std::min(first, second);
 }
 
 void task_1(){
-	const char* str1 = "1";
+	const char* str1 = "1aaaa";
 	int length1 = std::strlen(str1);
-	const char* str2 = "2";
+	const char* str2 = "1";
 	int length2 = std::strlen(str2);
-	int bord = Find_max(length1, length2);
+	int bord = Find_min(length1, length2);
 	int i = 0;
 	/*while (i < bord){
 		if (str1[i] != str2[i]) {
@@ -87,7 +87,7 @@ void task_1(){
 		beg:
 			mov ecx, i
 			cmp ecx, bord
-			jge gr_bord
+			jge end
 				mov eax, str1[ecx]
 				cmp eax, str2[ecx]
 				je eq_symb 
@@ -97,7 +97,6 @@ void task_1(){
 					jmp end
 				eq_symb:
 				inc ecx	
-			gr_bord:
 		end:
 	}
 	std::cout << flag;
@@ -122,7 +121,7 @@ void task_2() {
 	int i = 0;
 	__asm {
 		mov ecx, i
-		beg:
+		beg :
 			cmp ecx, n
 			jge gr_or_eq
 				mov edi, ecx //i*4
@@ -132,18 +131,72 @@ void task_2() {
 				add esi, edi//n*i*4 + i*4
 
 				mov eax, res
-				add eax, a[esi]	
+				add eax, a[esi]
 				mov res, eax
 
 				inc ecx
 				jmp beg
-				gr_or_eq :
+			gr_or_eq :
 		end:
 	}
 	std::cout << res;
 }
 
+void task_3() {
+	int n = 3;
+	int** a = new int* [n];
+	for (int i = 0; i < n; i++)
+	{
+		a[i] = new int[n];
+		
+	}
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			std::cin >> a[i][j];
+		}
+	}
+	std::cout << std::endl;
+	for (int i = 0; i < n; i++)
+		for (int j = 0; j < n; j++)
+		{
+			std::cout << a[i][j] << ' ';
+		}
+	std::cout << std::endl;
+	
+	int res = 0;
+	/*for (int i = 0; i < n ; i++)
+	{
+		res += a[i][i];
+	}*/
+	/*int i = 0;
+	while (i < n) {
+		res += a[i][i];
+		i++;
+	}
+	std::cout << res;*/
+	int i = 0;
+	__asm {
+		mov ecx, i
+		mov edx, a
+
+		beg :
+		cmp ecx, n
+			jge end
+			mov eax, [edx][ecx * 4]
+			mov ebx, [eax][ecx * 4]
+			add res, ebx
+
+			inc ecx
+			jmp beg
+		end :
+	}
+	std::cout << res;
+}
+
+
 int main() {
-	task_2();
+	task_3();
 	return 0;
 }
