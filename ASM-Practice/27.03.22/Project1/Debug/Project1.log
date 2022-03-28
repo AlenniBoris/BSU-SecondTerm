@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\27.03.22\Project1\Source.cpp(68,10): error C2660: StrChar: функция не принимает 0 аргументов
+C:\Proga for BSU\BSU-SecondTerm\ASM-Practice\27.03.22\Project1\Source.cpp(54,7): message : см. объявление "StrChar"

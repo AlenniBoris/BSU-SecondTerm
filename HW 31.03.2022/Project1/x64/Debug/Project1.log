@@ -1,0 +1,5 @@
+﻿  C-Tasks.cpp
+C:\Proga for BSU\BSU-SecondTerm\HW 31.03.2022\Project1\C-Tasks.cpp(20,45): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Proga for BSU\BSU-SecondTerm\HW 31.03.2022\Project1\C-Tasks.cpp(25,27): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Proga for BSU\BSU-SecondTerm\HW 31.03.2022\Project1\C-Tasks.cpp(42): warning C4715: StrCompare: значение возвращается не при всех путях выполнения
+  Project1.vcxproj -> C:\Proga for BSU\BSU-SecondTerm\HW 31.03.2022\Project1\x64\Debug\Project1.exe
