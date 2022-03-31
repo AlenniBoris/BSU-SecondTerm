@@ -1,69 +1,35 @@
 #include <iostream>
 
-void HEX() { //в 16-ричную
-	int num = 12345;
-	char str1[9];
-	str1[8] = 0;
-	char ABC[] = "0123456789ABCDEF";
-	
-	__asm {
-		mov ecx, 8
-		mov eax, num
-		beg:
-			cmp ecx, 0
-			jle end
-				mov ebx, eax
-				and ebx, 0x0000000F
-				mov dl, byte ptr ABC[ebx]
-				mov str1[ecx-1], dl
-				shr eax, 4
-				dec ecx
-				jmp beg
-		end:
+//extern "C" char __fastcall StrChar(char* str, char symbol);
+
+int Max(int** A, int a) {
+	int max = 0;
+	for (int i = 0; i < 5; i++)
+	{
+
 	}
-	
-	std::cout << str1;
-}
-
-void OCT() { //в 8-ричную
-	int num = 58;
-	char str1[9];
-	str1[8] = 0;
-	char ABC[] = "01234567";
-
-	__asm {
-		mov ecx, 8
-		mov eax, num
-		beg :
-		cmp ecx, 0
-			jle end
-			mov ebx, eax
-			and ebx, 0x0000000F
-			mov dl, byte ptr ABC[ebx]
-			mov str1[ecx - 1], dl
-			shr eax, 4
-			dec ecx
-			jmp beg
-			end :
-	}
-
-	std::cout << str1;
-}
-
-
-char* StrChar(char* str, char symbol) {
-	char* symb = nullptr;
-	int i = 0;
-	while (str[i] != symbol) {
-		if (str[i] == symbol) {
-			symb = &str[i];
-			break;
-		}
-		++i;
-	}
-	return symb;
+	return max;
 }
 
 int main() {
-	StrChar();
+	
+	int n = 5;
+	int** A = new int* [n];
+	for (int i = 0; i < n; ++i)
+	{
+		A[i] = new int[n];
+		for (int j = 0; j < n; ++j)
+		{
+			A[i][j] = rand() % 100;
+			std::cout << A[i][j] << ' ';
+		}
+	}
+	int max = Max(A, n);
+	std::cout << "max = " << max << std::endl;
+	for (int i = 0; i < n; ++i)
+	{
+		delete[] A[i];
+	}
+	delete[] A;
+
 }
