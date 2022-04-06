@@ -1,0 +1,5 @@
+﻿  Assembling Module.asm...
+Module.asm(1): error A2008: syntax error : .
+Module.asm(5): error A2008: syntax error : .
+Module.asm(12): fatal error A1010: unmatched block nesting : @CreateVectorB@16
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: выход из команды "ml64.exe /c /nologo /Zi /Fo"x64\Debug\Module.obj" /W3 /errorReport:prompt  /TaModule.asm" с кодом "1".
