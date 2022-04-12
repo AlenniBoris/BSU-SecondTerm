@@ -1,2 +1,7 @@
-﻿  Source.cpp
+﻿  Assembling Module.asm...
+Module.asm(45): warning A6004: procedure argument or local not referenced : fir_board
+Module.asm(45): warning A6004: procedure argument or local not referenced : sec_board
+Module.asm(77): warning A6004: procedure argument or local not referenced : epsilon
+Module.asm(77): warning A6004: procedure argument or local not referenced : sec_board
+  Source.cpp
   HW140422.vcxproj -> C:\Proga for BSU\BSU-SecondTerm\HW 14.04.2022\HW140422\Debug\HW140422.exe
