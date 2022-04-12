@@ -11,6 +11,7 @@ PUBLIC @IntToOct@8
 n dd 0
 m dd 0
 off dd 0
+abc db "0123456789ABCDEF"
 
 .code
 

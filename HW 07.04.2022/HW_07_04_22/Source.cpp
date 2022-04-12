@@ -70,7 +70,7 @@ int main() {
 		pop ebx
 	}
 
-	int number = 0x2A;
+	int number = 0x18A;
 	char str[12];
 	IntToOct(number, str);
 	std::cout << "IntToOct = " << str << '\n';
