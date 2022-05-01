@@ -27,16 +27,18 @@ int main() {
 	std::cout << "z = " << std::setprecision(20) << task_1(x, y) << std::endl;
 	std::cout << "cpp check : " << std::setprecision(20) << ((x * x) * (tan(x / y))) + ((y * y) * (cos(x/y) / sin(x / y))) <<  std::endl;
 
-
-	double epsilon = 0.0000000123;
+	int counter = 0;
+	double result = 0.0;
+	double epsilon = 0.00001;
 	double pi = get_PI()/12;
 
 	std::cout << "pi check : " << std::setprecision(20) << pi << std::endl;
 	std::cout << "PI = " << std::setprecision(20) << task_3(epsilon) << std::endl; 
 
 
-	double f_b = -12.515;
-	double s_b = 1.755;
-	std::cout << "Root = " << std::setprecision(20) << task_2(epsilon, f_b , s_b) << std::endl;
+	double f_coef = 1;
+	double s_coef = 1;
+	double th_coef = -24.375;
+	std::cout << "Root = " << std::setprecision(20) << task_2(f_coef, s_coef, th_coef) << std::endl;
 
 }
