@@ -2,21 +2,25 @@
 #include <QApplication>
 #include "BinSrchTree.h"
 #include "BinSrchTreeARR.h"
-//#include "tree_node.h"
+#include "tree_node.h"
+
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
+
+    QApplication a(argc, argv);
+
     BinSrchTree tree;
-    tree.insert(20);
-    tree.insert(19);
-    tree.insert(142);
-    tree.insert(95);
-    tree.insert(154);
     tree.insert(15);
-    tree.insert(1);
-    tree.insert(-32);
+    tree.insert(19);
+    tree.insert(2);
+    tree.insert(5);
+    tree.insert(7);
+    tree.insert(15);
     tree.insert(18);
+    tree.insert(-2);
+
 
     tree.print();
 
@@ -32,9 +36,10 @@ int main(int argc, char *argv[]) {
 
 
 
-//    QApplication a(argc, argv);
-//    Tree_n t_n;
-//    t_n.show();
 
-    return 0;
+    tree_node tr(tree);
+    tr.show();
+    tr.resize(1000,700);
+
+    return a.exec();
 }

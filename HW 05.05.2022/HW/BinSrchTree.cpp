@@ -1,6 +1,6 @@
 #include "BinSrchTree.h"
 
-BinSrchTree::Node *BinSrchTree::insert(int x, BinSrchTree::Node *t) {
+Node *BinSrchTree::insert(int x, Node *t) {
     if(t == nullptr){
         t = new Node;
         t->data = x;
@@ -14,7 +14,7 @@ BinSrchTree::Node *BinSrchTree::insert(int x, BinSrchTree::Node *t) {
     return t;
 }
 
-void BinSrchTree::true_order(BinSrchTree::Node *t) {
+void BinSrchTree::true_order(Node *t) {
     if (t == nullptr)
         return;
     true_order(t->left);
@@ -31,7 +31,7 @@ void BinSrchTree::insert(int num_) {
     root = insert(num_, root);
 }
 
-BinSrchTree::Node *BinSrchTree::find_min(BinSrchTree::Node *t) {
+Node *BinSrchTree::find_min(Node *t) {
     if (t == NULL)
         return NULL;
     else if (t->left == NULL)
@@ -48,7 +48,7 @@ int BinSrchTree::max_num_() {
     return find_max(root)->data;
 }
 
-BinSrchTree::Node *BinSrchTree::find_max(BinSrchTree::Node *t) {
+Node *BinSrchTree::find_max(Node *t) {
     if (t == NULL)
         return NULL;
     else if (t->right == NULL)
@@ -56,3 +56,8 @@ BinSrchTree::Node *BinSrchTree::find_max(BinSrchTree::Node *t) {
     else
         return find_max(t->right);
 }
+
+Node* BinSrchTree::ret_node() {
+    return root;
+}
+

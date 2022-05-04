@@ -1,17 +1,18 @@
 #ifndef HW_BINSRCHTREE_H
 #define HW_BINSRCHTREE_H
 
-
 #include <iostream>
+
+struct Node{
+    int data;
+    Node* left;
+    Node* right;
+};
 
 class BinSrchTree {
 protected:
-    struct Node{
-        int data;
-        Node* left;
-        Node* right;
-    };
-    Node* root;
+
+    Node* root = nullptr;
     Node* insert(int x, Node* t);
     void true_order(Node* t);
     Node* find_min(Node* t);
@@ -25,6 +26,7 @@ public:
     void print();
     int min_num_();
     int max_num_();
+    Node* ret_node();
 };
 
 
