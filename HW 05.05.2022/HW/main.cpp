@@ -1,8 +1,9 @@
 #include <iostream>
 #include <QApplication>
-#include "BinSrchTree.h"
-#include "BinSrchTreeARR.h"
+//#include "BinSrchTree.h"
+//#include "BinSrchTreeARR.h"
 #include "tree_node.h"
+#include "tree_arr.h"
 
 
 using namespace std;
@@ -20,12 +21,19 @@ int main(int argc, char *argv[]) {
     tree.insert(15);
     tree.insert(18);
     tree.insert(-2);
-
+    tree.insert(43);
+    tree.insert(17);
+    tree.insert(689);
+    tree.insert(-137);
+    tree.insert(376);
+    tree.insert(0);
 
     tree.print();
 
-    cout << '\n' << tree.min_num_() << ' ' << tree.max_num_();
+
     cout << endl;
+
+
     BinSrchTreeARR frank(5);
     frank.insertElement(4);
     frank.insertElement(6);
@@ -36,10 +44,14 @@ int main(int argc, char *argv[]) {
 
 
 
-
     tree_node tr(tree);
     tr.show();
-    tr.resize(1000,700);
+    tr.resize(1000,1000);
+
+
+//    tree_arr tr(frank);
+//    tr.show();
+//    tr.resize(1000,1000);
 
     return a.exec();
 }

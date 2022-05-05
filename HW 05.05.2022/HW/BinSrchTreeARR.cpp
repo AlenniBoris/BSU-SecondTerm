@@ -44,3 +44,9 @@ void BinSrchTreeARR::inOrder(int currentIndex){
 
     }
 }
+
+int* BinSrchTreeARR::get_arr() {
+    return array;
+}
+
+

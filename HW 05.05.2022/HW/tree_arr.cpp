@@ -1,19 +1,21 @@
-#include "tree_node.h"
+#include "tree_arr.h"
 
-void tree_node::paintEvent(QPaintEvent *event) {
+
+void tree_arr::paintEvent(QPaintEvent *event) {
     QRect rect = this->rect();
     QPainter painter(this);
-    QPen pen(Qt::black, 3);
-    QBrush brush(Qt::black);
+    QPen pen(Qt::red , 3);
     painter.setPen(pen);
     int mid = rect.width()/2;
     int leaf_rad = rect.height()/25 + rect.width()/25;
-    this->draw(mid, leaf_rad, tree.ret_node(), painter, leaf_rad);
+    this->draw(mid, leaf_rad, tree.turn_to_node(),painter,leaf_rad);
 }
 
-void tree_node::draw(int X_cord, int Y_cord, Node* node, QPainter &painter, int l_r) {
+void tree_arr::draw(int X_cord, int Y_cord, Node* node, QPainter &painter, int l_r) {
+
     int dx = 0.4*l_r;
     int dy = 0.6*l_r;
+
     if (node == nullptr){
         return;
     } else{
@@ -28,6 +30,5 @@ void tree_node::draw(int X_cord, int Y_cord, Node* node, QPainter &painter, int 
         painter.drawLine(X_cord + dx, Y_cord + l_r, X_cord + 2.5*l_r, Y_cord + 2*l_r);
         draw(X_cord + 2*l_r, Y_cord + 2*l_r, node->right, painter, 0.7*l_r);
     }
+
 }
-
-

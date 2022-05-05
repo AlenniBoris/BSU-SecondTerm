@@ -12,15 +12,13 @@ class tree_node : public QWidget {
 Q_OBJECT
 private:
     BinSrchTree tree;
-    int leaf_rad = 60;
-
+//    int leaf_rad = 100;
 public:
-
     tree_node(BinSrchTree btree) : tree(btree){};
     ~tree_node(){};
-protected:
+
     void paintEvent(QPaintEvent *event);
-    void draw(int X_cord,int Y_cord, Node* node, QPainter& painter);
+    void draw(int X_cord,int Y_cord, Node* node, QPainter& painter, int l_r);
 };
 
 
