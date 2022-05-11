@@ -1,34 +1,62 @@
 #include "tree_arr.h"
 
 
-void tree_arr::paintEvent(QPaintEvent *event) {
-    QRect rect = this->rect();
-    QPainter painter(this);
-    QPen pen(Qt::red , 3);
-    painter.setPen(pen);
-    int mid = rect.width()/2;
-    int leaf_rad = rect.height()/25 + rect.width()/25;
-    this->draw(mid, leaf_rad, tree.turn_to_node(),painter,leaf_rad);
+Widget::Widget(QWidget* parent)
+        : QWidget(parent)
+{
+    bst.insert(8);
+    bst.insert(3);
+    bst.insert(10);
+    bst.insert(1);
+    bst.insert(6);
+    bst.insert(14);
+    bst.insert(4);
+    bst.insert(7);
+    bst.insert(13);
+    bst.traverse();
 }
 
-void tree_arr::draw(int X_cord, int Y_cord, Node* node, QPainter &painter, int l_r) {
+void Widget::paintEvent(QPaintEvent*)
+{
+    QPainter painter(this);
+    int x = width() / 2;
+    int y = 40;
+    int dx = width() / 2;
+    int dy = height() / 8;
+    int index = 0;
+    int radius = 20;
+    int level = 1;
+    int count = 1;
+    int curX, curY;
+    int size = width() / 70;
+    QPen pen(Qt::black, 3);
+    QBrush brush(Qt::gray);
+    painter.setBrush(brush);
 
-    int dx = 0.4*l_r;
-    int dy = 0.6*l_r;
-
-    if (node == nullptr){
-        return;
-    } else{
-        painter.drawEllipse(X_cord,Y_cord,l_r, l_r);
-        painter.drawText(X_cord + dx, Y_cord + dy, QString::number(node->data));
+    painter.setFont(QFont("arial", size));
+    while (level != 6)
+    {
+        curX = x;
+        curY = y;
+        for (int i = 0; i < count; ++i)
+        {
+            if (bst.arr[index] != -1)
+            {
+                if (bst.arr[2 * index + 1] != -1)
+                    painter.drawLine(curX, curY, curX - dx / 2, curY + dy);
+                if (bst.arr[2 * index + 2] != -1)
+                    painter.drawLine(curX, curY, curX + dx / 2, curY + dy);
+                painter.drawEllipse(curX - radius, curY - radius, 2 * radius, 2 * radius);
+                QString str = QString::number(bst.arr[index]);
+                painter.drawText(curX - size / 2 - ((str.length() - 1) * radius) / 2 + ((str.length() - 1) * (radius / 2)), curY + size / 2, str);
+            }
+            ++index;
+            curX += 2 * dx;
+        }
+        ++level;
+        y += dy;
+        x /= 2;
+        count *= 2;
+        dx /= 2;
     }
-    if (node->left != nullptr){
-        painter.drawLine(X_cord + dx, Y_cord + l_r, X_cord - 1.5*l_r, Y_cord + 2*l_r);
-        draw(X_cord - 2*l_r, Y_cord + 2*l_r, node->left, painter, 0.7*l_r);
-    }
-    if (node->right != nullptr){
-        painter.drawLine(X_cord + dx, Y_cord + l_r, X_cord + 2.5*l_r, Y_cord + 2*l_r);
-        draw(X_cord + 2*l_r, Y_cord + 2*l_r, node->right, painter, 0.7*l_r);
-    }
-
 }

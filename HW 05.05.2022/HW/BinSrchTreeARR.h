@@ -20,18 +20,6 @@ public:
 
     int* get_arr();
 
-    Node* turn_to_node(){
-        int index = 0;
-        Node* temp = new Node;
-//        while(true){
-//            if (array[index] !=  NULL){
-//                temp->data = array[index];
-//                temp->left
-//            }
-//        }
-
-        return temp;
-    };
 
     BinSrchTreeARR (int size) {
         this->size = extendSize(size);
@@ -40,6 +28,7 @@ public:
             array[x] = NULL;
         }
     }
+
 };
 
 #endif //HW_BINSRCHTREEARR_H

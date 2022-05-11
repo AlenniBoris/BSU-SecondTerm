@@ -2,22 +2,21 @@
 #define HW_TREE_ARR_H
 
 #include <QWidget>
-#include "BinSrchTreeARR.h"
+#include "N_MY_ARRTR.h"
 #include <QPainter>
 
-class tree_arr : public QWidget {
+class Widget : public QWidget
+{
 Q_OBJECT
-private:
-
-    BinSrchTreeARR tree;
 
 public:
-    tree_arr(BinSrchTreeARR treeArr) : tree(treeArr) {};
-    ~tree_arr() {};
+    Widget(QWidget* parent = nullptr);
+    ~Widget() {};
 
-    void paintEvent(QPaintEvent *event);
-    void draw(int X_cord,int Y_cord, Node* node, QPainter& painter, int l_r);
-
+protected:
+    void paintEvent(QPaintEvent* event);
+private:
+    ABST bst;
 };
 
 

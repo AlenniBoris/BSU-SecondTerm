@@ -1,9 +1,10 @@
 #include <iostream>
 #include <QApplication>
-//#include "BinSrchTree.h"
-//#include "BinSrchTreeARR.h"
 #include "tree_node.h"
 #include "tree_arr.h"
+#include "BinSrchTreeARR.h"
+#include "N_MY_ARRTR.h"
+
 
 
 using namespace std;
@@ -18,14 +19,10 @@ int main(int argc, char *argv[]) {
     tree.insert(2);
     tree.insert(5);
     tree.insert(7);
-    tree.insert(15);
     tree.insert(18);
     tree.insert(-2);
     tree.insert(43);
     tree.insert(17);
-    tree.insert(689);
-    tree.insert(-137);
-    tree.insert(376);
     tree.insert(0);
 
     tree.print();
@@ -48,10 +45,8 @@ int main(int argc, char *argv[]) {
     tr.show();
     tr.resize(1000,1000);
 
-
-//    tree_arr tr(frank);
-//    tr.show();
-//    tr.resize(1000,1000);
+    Widget w;
+    w.show();
 
     return a.exec();
 }

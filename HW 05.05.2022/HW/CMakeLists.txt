@@ -15,7 +15,7 @@ find_package(Qt5 COMPONENTS
         REQUIRED)
 
 add_executable(HW main.cpp BinSrchTree.cpp BinSrchTree.h BinSrchTreeARR.cpp BinSrchTreeARR.h tree_node.cpp tree_node.h tree_node.ui
-        tree_arr.cpp tree_arr.h tree_arr.ui)
+        tree_arr.cpp tree_arr.h tree_arr.ui N_MY_ARRTR.cpp N_MY_ARRTR.h)
 target_link_libraries(HW
         Qt5::Core
         Qt5::Gui
