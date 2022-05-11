@@ -9,16 +9,16 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    MyWidget w;
-    w.show();
+//    MyWidget w;
+//    w.show();
 
 
-    Gist_z g;
-    g.show();
+//    Gist_z g;
+//    g.show();
 
     Cross_zero cz;
     cz.show();
-    cz.resize(200,200);
+    cz.setFixedSize(600,600);
 
     return a.exec();
 }

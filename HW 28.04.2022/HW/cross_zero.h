@@ -24,6 +24,6 @@ private:
     std::vector<std::vector<int>> data;
 };
 
-QString draw_el(int num_);
+void draw_el(int num_, QPainter& painter, int i, int j, double dx, double dy, double size);
 
 #endif // CROSS_ZERO_H
