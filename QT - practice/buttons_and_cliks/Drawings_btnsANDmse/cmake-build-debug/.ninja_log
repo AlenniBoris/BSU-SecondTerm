@@ -1,0 +1,14 @@
+# ninja log v5
+2	133	6740033390337853	Drawings_btnsANDmse_autogen/timestamp	2a6d5f7490a904f3
+133	174	6740033390995861	CMakeFiles/Drawings_btnsANDmse.dir/Drawings_btnsANDmse_autogen/mocs_compilation.cpp.obj	ae3a5efde9a382b8
+2	133	6740033390337853	Drawings_btnsANDmse_autogen/mocs_compilation.cpp	2a6d5f7490a904f3
+2	133	6740033390337853	C:/Proga for BSU/BSU-SecondTerm/QT - practice/buttons_and_cliks/Drawings_btnsANDmse/cmake-build-debug/Drawings_btnsANDmse_autogen/timestamp	2a6d5f7490a904f3
+135	1563	6740033404895331	CMakeFiles/Drawings_btnsANDmse.dir/main.cpp.obj	446feab9e28d2524
+2	133	6740033390337853	C:/Proga for BSU/BSU-SecondTerm/QT - practice/buttons_and_cliks/Drawings_btnsANDmse/cmake-build-debug/Drawings_btnsANDmse_autogen/mocs_compilation.cpp	2a6d5f7490a904f3
+134	1554	6740033404805335	CMakeFiles/Drawings_btnsANDmse.dir/paint.cpp.obj	7d9be5384033a419
+1563	1794	6740033405897344	Drawings_btnsANDmse.exe	c0850306b5d038d7
+4	74	6740048826393260	Drawings_btnsANDmse_autogen/timestamp	2a6d5f7490a904f3
+4	74	6740048826393260	Drawings_btnsANDmse_autogen/mocs_compilation.cpp	2a6d5f7490a904f3
+4	74	6740048826393260	C:/Proga for BSU/BSU-SecondTerm/QT - practice/buttons_and_cliks/Drawings_btnsANDmse/cmake-build-debug/Drawings_btnsANDmse_autogen/timestamp	2a6d5f7490a904f3
+4	74	6740048826393260	C:/Proga for BSU/BSU-SecondTerm/QT - practice/buttons_and_cliks/Drawings_btnsANDmse/cmake-build-debug/Drawings_btnsANDmse_autogen/mocs_compilation.cpp	2a6d5f7490a904f3
+76	1590	6740048841547608	CMakeFiles/Drawings_btnsANDmse.dir/paintScene.cpp.obj	cab33c566478bf86

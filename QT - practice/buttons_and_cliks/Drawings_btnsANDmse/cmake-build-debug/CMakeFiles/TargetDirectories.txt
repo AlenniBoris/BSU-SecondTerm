@@ -1,0 +1,5 @@
+C:/Proga for BSU/BSU-SecondTerm/QT - practice/buttons_and_cliks/Drawings_btnsANDmse/cmake-build-debug/CMakeFiles/Drawings_btnsANDmse.dir
+C:/Proga for BSU/BSU-SecondTerm/QT - practice/buttons_and_cliks/Drawings_btnsANDmse/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Proga for BSU/BSU-SecondTerm/QT - practice/buttons_and_cliks/Drawings_btnsANDmse/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Proga for BSU/BSU-SecondTerm/QT - practice/buttons_and_cliks/Drawings_btnsANDmse/cmake-build-debug/CMakeFiles/Drawings_btnsANDmse_autogen_timestamp_deps.dir
+C:/Proga for BSU/BSU-SecondTerm/QT - practice/buttons_and_cliks/Drawings_btnsANDmse/cmake-build-debug/CMakeFiles/Drawings_btnsANDmse_autogen.dir
