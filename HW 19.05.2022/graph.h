@@ -28,13 +28,13 @@ public:
 
 protected:
     void paintEvent(QPaintEvent *event);
-    double func_culc(double x);
+    double func_culc(int x);
 
 private:
     Ui::graph *ui;
 
-    double x_beg, x_end , delta, x;
-    QVector<QPoint> pts;
+    double delta, x;
+    QVector<QPointF> pts;
 
 
 };
