@@ -18,14 +18,14 @@ graph::~graph() {
     delete ui;
 }
 
-double graph::func_culc(int x){
-    double f_x = -(pow(x,2) + sin(x));
-    return f_x;
+double graph::func_culc(int x, int dx){
+    double f_x = -((x*x));
+    return dx*f_x;
 }
 
 void graph::paintEvent(QPaintEvent *event) {
 
-    delta = 0.05;
+    delta = 0.5;
 
     int margin = 20;
 
@@ -58,16 +58,16 @@ void graph::paintEvent(QPaintEvent *event) {
 
     }
 
-    QBrush pts_bsh(Qt::white);
+    QBrush pts_bsh(Qt::transparent);
     QPen pts_pen(pts_bsh, 3);
 
     QBrush line_bsh(Qt::blue);
     QPen line_pen(line_bsh, 3);
 
-    for (int i = -3; i < 3; ++i) {
+    for (int i = -10; i <= 10; ++i) {
         QPointF point;
         point.setX(i*dx);
-        point.setY(20*func_culc(i));
+        point.setY(func_culc(i,dx));
         pts.push_back(point);
         x = x + delta;
     }
@@ -76,7 +76,7 @@ void graph::paintEvent(QPaintEvent *event) {
         painter.setPen(line_pen);
         painter.drawLine(pts[i], pts[i+1]);
         painter.setPen(pts_pen);
-//        painter.drawLine(pts[pts.size()-1], pts[0]);
+        painter.drawLine(pts[pts.size()-1], pts[0]);
     }
 
 }
