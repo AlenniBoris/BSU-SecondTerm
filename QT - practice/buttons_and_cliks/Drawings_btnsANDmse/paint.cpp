@@ -1,9 +1,3 @@
-//
-// Created by User on 11.05.2022.
-//
-
-// You may need to build the project (run Qt uic code generator) to get "ui_Paint.h" resolved
-
 #include "paint.h"
 #include "ui_Paint.h"
 #include <QGraphicsView>
