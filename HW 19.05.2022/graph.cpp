@@ -18,14 +18,14 @@ graph::~graph() {
     delete ui;
 }
 
-double graph::func_culc(int x, int dx){
-    double f_x = -((x*x));
-    return dx*f_x;
+double graph::func_culc(double x, int scale){
+    double f_x = -((x*x)+ sin(x));
+    return scale*f_x;
 }
 
 void graph::paintEvent(QPaintEvent *event) {
 
-    delta = 0.5;
+    delta = 0.001;
 
     int margin = 20;
 
@@ -48,10 +48,10 @@ void graph::paintEvent(QPaintEvent *event) {
     for (int i = -20; i < 20; ++i) {
 
         painter.drawLine(i*dx,dy/20, i*dx, -dy/20); // штрихи для x
-        painter.drawText(i*dx, dy/5, QString::number(i));// штрихи для y
+        painter.drawText(i*dx, dy/2, QString::number(i));// штрихи для y
         painter.drawLine(dx/20, i*dy, -dx/20, i*dy);// текст для х
         if (i == 0){ continue; }
-        painter.drawText(-dx/5, i*dy, QString::number(i));
+        painter.drawText(-dx/2, i*dy, QString::number(i));
 
         painter.drawLine(-2*mid_x, 0, 2*mid_x, 0);
         painter.drawLine(0, -2*mid_y, 0, 2*mid_y);
@@ -64,12 +64,11 @@ void graph::paintEvent(QPaintEvent *event) {
     QBrush line_bsh(Qt::blue);
     QPen line_pen(line_bsh, 3);
 
-    for (int i = -10; i <= 10; ++i) {
+    for (double i = -3; i <= 3; i+=delta) {
         QPointF point;
         point.setX(i*dx);
-        point.setY(func_culc(i,dx));
+        point.setY(func_culc(i,dy));
         pts.push_back(point);
-        x = x + delta;
     }
 
     for (int i = 0; i < pts.size()-1; ++i) {

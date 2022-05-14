@@ -28,7 +28,7 @@ public:
 
 protected:
     void paintEvent(QPaintEvent *event);
-    double func_culc(int x, int dx);
+    double func_culc(double x, int scale);
 
 private:
     Ui::graph *ui;
