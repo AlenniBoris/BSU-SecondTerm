@@ -23,6 +23,7 @@ f_x_mean::f_x_mean(QWidget *parent) :
     editY = new QLineEdit(this);
     editY->setDisabled(true);
 
+
     f_btn = new QPushButton("f(x)", this);
     connect(f_btn, SIGNAL(clicked()), SLOT(set_f()));
 
@@ -33,7 +34,7 @@ f_x_mean::f_x_mean(QWidget *parent) :
     layout->addWidget(editY);
 
 
-    setLayout( layout );
+    setLayout(layout);
 
 }
 
@@ -49,4 +50,6 @@ void f_x_mean::set_f() {
     QString temp_str = editX->text();
     editY->setText(QString::number(-1*graph::func_culc(temp_str.toDouble())));
 }
+
+
 

@@ -1,7 +1,3 @@
-//
-// Created by User on 15.05.2022.
-//
-
 #ifndef HW_19_05_2022_MAINWINDOW_H
 #define HW_19_05_2022_MAINWINDOW_H
 
@@ -20,6 +16,10 @@ Q_OBJECT
 public:
     explicit mainwindow(QWidget *parent = nullptr);
 
+    void mousePressEvent(QMouseEvent* event) override;
+    void mouseMoveEvent(QMouseEvent* event) override;
+    void mouseReleaseEvent(QMouseEvent* event) override;
+
     ~mainwindow() override;
 
 private:
@@ -30,8 +30,13 @@ private:
 
     f_x_mean* f_wind;
 
+    bool scribbling;
+    QLabel* lbl;
+
+
 protected slots:
     void f_btn_logic();
+
 };
 
 

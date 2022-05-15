@@ -1,20 +1,15 @@
-//
-// Created by User on 15.05.2022.
-//
-
-// You may need to build the project (run Qt uic code generator) to get "ui_mainwindow.h" resolved
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 #include <QBoxLayout>
-
+#define PI 3.141592653589793
 
 mainwindow::mainwindow(QWidget *parent) :
         QWidget(parent), ui(new Ui::mainwindow) {
     ui->setupUi(this);
 
     QBoxLayout* layout = new QVBoxLayout();
+
     f_graph = new graph(this);
 
     dialog_fx_btn =  new QPushButton("f(x)", this);
@@ -25,7 +20,11 @@ mainwindow::mainwindow(QWidget *parent) :
 
     f_wind = new f_x_mean();
 
+    lbl = new QLabel(this);
+
     setLayout(layout);
+
+
 }
 
 mainwindow::~mainwindow() {
@@ -34,5 +33,27 @@ mainwindow::~mainwindow() {
 
 void mainwindow::f_btn_logic() {
     f_wind->show();
+}
+
+void mainwindow::mousePressEvent(QMouseEvent *event) {
+    if(event->buttons() & Qt::LeftButton){
+        lbl->show();
+    }
+}
+
+void mainwindow::mouseMoveEvent(QMouseEvent *event) {
+    if ((event->buttons() & Qt::LeftButton) && scribbling)
+    {
+        QPointF point = event->pos();
+        lbl->setText(QString::number(graph::func_culc(event->x())));
+        lbl->setGeometry(point.rx() + 10, point.ry() + 10, 50, 50);
+    }
+}
+
+void mainwindow::mouseReleaseEvent(QMouseEvent *event) {
+    if (event->button() & Qt::LeftButton && scribbling)
+    {
+        lbl->hide();
+    }
 }
 

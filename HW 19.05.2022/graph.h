@@ -1,7 +1,3 @@
-//
-// Created by User on 14.05.2022.
-//
-
 #ifndef HW_19_05_2022_GRAPH_H
 #define HW_19_05_2022_GRAPH_H
 
@@ -13,6 +9,7 @@
 #include <QPen>
 #include <QBrush>
 #include <QRect>
+#include <QMouseEvent>
 #include "f_x_mean.h"
 
 QT_BEGIN_NAMESPACE
@@ -27,14 +24,20 @@ public:
 
     ~graph() override;
 
-
     static double func_culc(double x);
+
     void paintEvent(QPaintEvent *event);
 
+
+
+
 private:
+
     Ui::graph *ui;
 
     double delta, x;
+
+    QString for_fx_title;
 
     QVector<QPointF> pts;
 };

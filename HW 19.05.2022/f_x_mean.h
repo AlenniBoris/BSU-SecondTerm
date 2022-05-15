@@ -30,7 +30,10 @@ private:
 
     QLineEdit* editX;
     QLineEdit* editY;
+    QLineEdit* editZ;
     QPushButton* f_btn;
+
+
 };
 
 

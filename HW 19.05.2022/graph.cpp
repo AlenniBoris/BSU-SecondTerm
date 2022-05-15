@@ -1,9 +1,3 @@
-//
-// Created by User on 14.05.2022.
-//
-
-// You may need to build the project (run Qt uic code generator) to get "ui_graph.h" resolved
-
 #include "graph.h"
 #include "ui_graph.h"
 
