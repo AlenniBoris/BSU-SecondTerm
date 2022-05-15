@@ -18,24 +18,19 @@ graph::~graph() {
     delete ui;
 }
 
-double graph::func_culc(double x, int scale){
+double graph::func_culc(double x){
     double f_x = -((x*x)+ sin(x));
-    return scale*f_x;
+    return f_x;
 }
 
 void graph::paintEvent(QPaintEvent *event) {
-
-    delta = 0.001;
-
+    delta = 0.0001;
     int margin = 20;
 
     QPainter painter(this);
-
-    QRect qRect;
-
     int mid_x = QWidget::width() / 2;
     int mid_y = QWidget::height() / 2;
-    QPoint center(mid_x, mid_y);  // Определяем новое начало координат
+    QPoint center(mid_x, mid_y);
     painter.translate(center);
 
     int dx = (QWidget::width()-margin)/20;
@@ -67,7 +62,7 @@ void graph::paintEvent(QPaintEvent *event) {
     for (double i = -3; i <= 3; i+=delta) {
         QPointF point;
         point.setX(i*dx);
-        point.setY(func_culc(i,dy));
+        point.setY(func_culc(i)*dy);
         pts.push_back(point);
     }
 
@@ -79,5 +74,4 @@ void graph::paintEvent(QPaintEvent *event) {
     }
 
 }
-
 

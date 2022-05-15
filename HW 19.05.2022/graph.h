@@ -13,6 +13,7 @@
 #include <QPen>
 #include <QBrush>
 #include <QRect>
+#include "f_x_mean.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class graph; }
@@ -26,17 +27,16 @@ public:
 
     ~graph() override;
 
-protected:
+
+    static double func_culc(double x);
     void paintEvent(QPaintEvent *event);
-    double func_culc(double x, int scale);
 
 private:
     Ui::graph *ui;
 
     double delta, x;
+
     QVector<QPointF> pts;
-
-
 };
 
 

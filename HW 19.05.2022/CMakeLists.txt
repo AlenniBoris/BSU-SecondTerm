@@ -14,7 +14,7 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(HW_19_05_2022 main.cpp graph.cpp graph.h graph.ui)
+add_executable(HW_19_05_2022 main.cpp graph.cpp graph.h graph.ui f_x_mean.cpp f_x_mean.h f_x_mean.ui mainwindow.cpp mainwindow.h mainwindow.ui)
 target_link_libraries(HW_19_05_2022
         Qt5::Core
         Qt5::Gui
