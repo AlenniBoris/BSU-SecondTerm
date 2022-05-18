@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include <QMouseEvent>
 #include "graph.h"
 #include "f_x_mean.h"
 
@@ -30,7 +31,6 @@ private:
 
     f_x_mean* f_wind;
 
-    bool scribbling;
     QLabel* lbl;
 
 

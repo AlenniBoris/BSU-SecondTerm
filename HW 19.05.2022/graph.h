@@ -8,8 +8,6 @@
 #include <QPainter>
 #include <QPen>
 #include <QBrush>
-#include <QRect>
-#include <QMouseEvent>
 #include "f_x_mean.h"
 
 QT_BEGIN_NAMESPACE
@@ -28,16 +26,10 @@ public:
 
     void paintEvent(QPaintEvent *event);
 
-
-
-
 private:
-
     Ui::graph *ui;
 
     double delta, x;
-
-    QString for_fx_title;
 
     QVector<QPointF> pts;
 };

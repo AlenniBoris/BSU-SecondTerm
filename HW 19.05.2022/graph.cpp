@@ -13,7 +13,7 @@ graph::~graph() {
 }
 
 double graph::func_culc(double x){
-    double f_x = -((x*x)+ sin(x));
+    double f_x = -(powf(x,2)+ sin(x));
     return f_x;
 }
 
@@ -27,8 +27,8 @@ void graph::paintEvent(QPaintEvent *event) {
     QPoint center(mid_x, mid_y);
     painter.translate(center);
 
-    int dx = (QWidget::width()-margin)/20;
-    int dy = (QWidget::height()-margin)/20;
+    double dx = (QWidget::width()-margin)/20;
+    double dy = (QWidget::height()-margin)/20;
 
     QBrush axis_bsh(Qt::black);
     QPen axis_pen(axis_bsh, 2);
@@ -62,9 +62,7 @@ void graph::paintEvent(QPaintEvent *event) {
 
     for (int i = 0; i < pts.size()-1; ++i) {
         painter.setPen(line_pen);
-        painter.drawLine(pts[i], pts[i+1]);
-        painter.setPen(pts_pen);
-        painter.drawLine(pts[pts.size()-1], pts[0]);
+        painter.drawPoint(pts[i]);
     }
 
 }

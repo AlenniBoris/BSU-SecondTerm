@@ -5,8 +5,10 @@
 #include <QLineEdit>
 #include <QLabel>
 #include <QPushButton>
-#include <QLineEdit>
+#include <QBoxLayout>
+#include <QString>
 #include "graph.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class f_x_mean; }
@@ -30,9 +32,7 @@ private:
 
     QLineEdit* editX;
     QLineEdit* editY;
-    QLineEdit* editZ;
     QPushButton* f_btn;
-
 
 };
 

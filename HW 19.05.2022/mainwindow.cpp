@@ -2,7 +2,6 @@
 #include "ui_mainwindow.h"
 
 #include <QBoxLayout>
-#define PI 3.141592653589793
 
 mainwindow::mainwindow(QWidget *parent) :
         QWidget(parent), ui(new Ui::mainwindow) {
@@ -24,7 +23,6 @@ mainwindow::mainwindow(QWidget *parent) :
 
     setLayout(layout);
 
-
 }
 
 mainwindow::~mainwindow() {
@@ -42,17 +40,16 @@ void mainwindow::mousePressEvent(QMouseEvent *event) {
 }
 
 void mainwindow::mouseMoveEvent(QMouseEvent *event) {
-    if ((event->buttons() & Qt::LeftButton) && scribbling)
-    {
+    if ((event->buttons() & Qt::LeftButton)){
         QPointF point = event->pos();
-        lbl->setText(QString::number(graph::func_culc(event->x())));
-        lbl->setGeometry(point.rx() + 10, point.ry() + 10, 50, 50);
+        double x = point.rx() - width() / 2;
+        lbl->setText(QString::number(-1*graph::func_culc(x / 33)));
+        lbl->setGeometry(point.rx() + (QWidget::width() + QWidget::height()) / 180, point.ry() + (QWidget::width() + QWidget::height()) / 180, (QWidget::width() + QWidget::height()) / 36, (QWidget::width() + QWidget::height()) / 36);
     }
 }
 
 void mainwindow::mouseReleaseEvent(QMouseEvent *event) {
-    if (event->button() & Qt::LeftButton && scribbling)
-    {
+    if (event->button() & Qt::LeftButton){
         lbl->hide();
     }
 }

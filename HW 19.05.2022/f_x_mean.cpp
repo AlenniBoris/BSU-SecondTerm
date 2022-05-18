@@ -1,9 +1,6 @@
 #include "f_x_mean.h"
 #include "ui_f_x_mean.h"
 
-#include <QBoxLayout>
-#include <QPushButton>
-#include <QString>
 
 
 f_x_mean::f_x_mean(QWidget *parent) :
