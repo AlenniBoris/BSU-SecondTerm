@@ -1,0 +1,5 @@
+C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/cmake-build-debug/CMakeFiles/HW_26_05_2022.dir
+C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/cmake-build-debug/CMakeFiles/HW_26_05_2022_autogen_timestamp_deps.dir
+C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/cmake-build-debug/CMakeFiles/HW_26_05_2022_autogen.dir
