@@ -9,6 +9,7 @@
 #include <QMessageBox>
 #include <QLineEdit>
 #include <QFileDialog>
+#include <vector>
 #include "product.h"
 
 QT_BEGIN_NAMESPACE
@@ -25,13 +26,23 @@ public:
 
 protected slots:
     void loadLogic();
+
+    void priceSort();
+//    void codeSort();
+//    void typeSort();
+
 private:
     Ui::mainWidget *ui;
 
-    std::list<product> products;
+    std::vector<product> products;
 
     QListWidget* listWidget;
     QPushButton* load_btn;
+
+    QPushButton* priceSort_btn;
+//    QPushButton* codeSort_btn;
+//    QPushButton* typeSort_btn;
+
 
 
     void printItems();

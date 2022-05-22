@@ -36,7 +36,7 @@ std::istream& operator>>(std::istream& input, product& item){
     return input;
 }
 
-void getFileInfo(std::list<product>& itemList,const std::string& fileName){
+void getFileInfo(std::vector<product>& itemList,const std::string& fileName){
     std::ifstream file(fileName);
     product temp_item;
     while(file >> temp_item){

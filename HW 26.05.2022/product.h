@@ -6,6 +6,7 @@
 #include <list>
 #include <istream>
 #include <fstream>
+#include <vector>
 
 class product {
 private:
@@ -19,6 +20,7 @@ public:
             itemName_(name), itemType_(type),
             itemCode_(code), itemPrice_(price), itemNum_(num){};
     product() = default;
+
     std::string getName();
     std::string getType();
     unsigned int getCode();
@@ -31,6 +33,6 @@ protected:
 };
 
 std::istream& operator>>(std::istream&, product&);
-void getFileInfo(std::list<product>&,const std::string&);
+void getFileInfo(std::vector<product>&,const std::string&);
 
 #endif //HW_26_05_2022_PRODUCT_H
