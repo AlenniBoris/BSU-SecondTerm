@@ -115,35 +115,48 @@ void mainWidget::printItems() {
 
 void mainWidget::priceSort() {
     listWidget->clear();
-    for (int i = 0; i < products.size() - 1; ++i) {
-        if(products[i].getPrice() > products[i+1].getPrice()){
-            std::swap(products[i],products[i+1]);
-            i = 0;
+    if (!products.empty()){
+        for (int i = 0; i < products.size() - 1; ++i) {
+            if(products[i].getPrice() > products[i+1].getPrice()){
+                std::swap(products[i],products[i+1]);
+                i = 0;
+            }
         }
+        printItems();
+    } else{
+        listWidget->addItem("Nothing to sort");
     }
-    printItems();
+
 }
 
 void mainWidget::codeSort() {
     listWidget->clear();
-    for (int i = 0; i < products.size() - 1; ++i) {
-        if(products[i].getCode() > products[i+1].getCode()){
-            std::swap(products[i],products[i+1]);
-            i = 0;
+    if (!products.empty()){
+        for (int i = 0; i < products.size() - 1; ++i) {
+            if(products[i].getCode() > products[i+1].getCode()){
+                std::swap(products[i],products[i+1]);
+                i = 0;
+            }
         }
+        printItems();
+    }else{
+        listWidget->addItem("Nothing to sort");
     }
-    printItems();
 }
 
 void mainWidget::typeSort() {
     listWidget->clear();
-    for (int i = 0; i < products.size() - 1; ++i) {
-        if(products[i].getType() > products[i+1].getType()){
-            std::swap(products[i],products[i+1]);
-            i = 0;
+    if (!products.empty()){
+        for (int i = 0; i < products.size() - 1; ++i) {
+            if(products[i].getType() > products[i+1].getType()){
+                std::swap(products[i],products[i+1]);
+                i = 0;
+            }
         }
+        printItems();
+    }else{
+        listWidget->addItem("Nothing to sort");
     }
-    printItems();
 }
 
 void mainWidget::srchLogic() {
