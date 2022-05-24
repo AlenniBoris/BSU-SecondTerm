@@ -1,6 +1,6 @@
 #include "mainwidget.h"
 #include "ui_mainWidget.h"
-
+#include "addDialog.h"
 
 mainWidget::mainWidget(QWidget *parent) :
         QWidget(parent), ui(new Ui::mainWidget) {
@@ -19,8 +19,18 @@ mainWidget::mainWidget(QWidget *parent) :
     connect(loadAct, SIGNAL(triggered()), SLOT(loadLogic()));
     loadAct->setShortcut(tr("CTRL+L"));
 
-    fileMenu->addAction(loadAct);
+    addNewAct = new QAction("Add new item", this);
+    connect(addNewAct, SIGNAL(triggered()), SLOT(addNew()));
+    addNewAct->setShortcut(tr("CTRL+N"));
 
+    deleteAct = new QAction("Delete item", this);
+    connect(deleteAct, SIGNAL(triggered()), SLOT(deleteItem()));
+    deleteAct->setShortcut(tr("Delete"));
+
+
+    fileMenu->addAction(loadAct);
+    fileMenu->addAction(addNewAct);
+    fileMenu->addAction(deleteAct);
     // fileMenu - end
 
     // sortMenu - begin
@@ -60,16 +70,14 @@ mainWidget::mainWidget(QWidget *parent) :
     lessLbl = new QLabel("Enter minimum number: ");
     lessEdit = new QLineEdit(this);
 
-
-
-
+    srchWidget = new searchedWidget();
+    lessWidget = new searchedWidget();
     // search - end
 
     //Menu+layout setup
     widgetMenu->addMenu(fileMenu);
     widgetMenu->addMenu(sortMenu);
     widgetMenu->addMenu(srchMenu);
-
 
     layout->addWidget(widgetMenu);
     layout->addWidget(listWidget);
@@ -79,6 +87,9 @@ mainWidget::mainWidget(QWidget *parent) :
     layout->addWidget(typeEdit);
     layout->addWidget(lessLbl);
     layout->addWidget(lessEdit);
+//Menu+layout setup
+
+    setLayout(layout);
 }
 
 mainWidget::~mainWidget() {
@@ -137,10 +148,9 @@ void mainWidget::typeSort() {
 
 void mainWidget::srchLogic() {
     int count = 0;
-    listWidget->clear();
     for (auto product : products) {
         if (product.getType().contains(typeEdit->text()) && product.getName().contains(nameEdit->text())) {
-            listWidget->addItem(QString::fromStdString(product.showInString()));
+            srchWidget->addFinded(QString::fromStdString(product.showInString()));
             count++;
         }
         else if(!product.getType().contains(typeEdit->text()) || !product.getName().contains(nameEdit->text())){
@@ -148,25 +158,38 @@ void mainWidget::srchLogic() {
         }
     }
     if (count == 0){
-        listWidget->addItem("Not found");
+        srchWidget->addFinded(QString::fromStdString("Not Found"));
     }
+    srchWidget->show();
 }
 
 void mainWidget::srchLessLogic() {
     int count = 0;
-    listWidget->clear();
     for (auto product : products) {
         if (product.getNum() < lessEdit->text().toInt()){
-            listWidget->addItem(QString::fromStdString(product.showInString()));
+            lessWidget->addFinded(QString::fromStdString(product.showInString()));
             count++;
         } else{
             continue;
         }
     }
     if (count == 0){
-        listWidget->clear();
-        listWidget->addItem("Not found");
+        lessWidget->addFinded(QString::fromStdString("Not Found"));
     }
+    lessWidget->show();
+}
+
+void mainWidget::addNew() {
+    addDialog *addDia = new addDialog(this);
+    if(addDia->exec() == QDialog::Accepted){
+        Product tmp = addDia->product();
+        products.push_back(tmp);
+        printItems();
+    }
+}
+
+void mainWidget::deleteItem() {
+    listWidget->clear();
 }
 
 

@@ -1,31 +1,31 @@
 #include "product.h"
 
-QString product::getName() {
+QString Product::getName() {
     return itemName_;
 }
 
-QString product::getType() {
+QString Product::getType() {
     return itemType_;
 }
 
-unsigned int product::getCode() {
+unsigned int Product::getCode() {
     return itemCode_;
 }
 
-unsigned int product::getPrice() {
+unsigned int Product::getPrice() {
     return itemPrice_;
 }
 
-unsigned int product::getNum() {
+unsigned int Product::getNum() {
     return itemNum_;
 }
 
-std::string product::showInString() {
+std::string Product::showInString() {
     return "Имя: " + itemName_.toStdString() + "; Тип: " + itemType_.toStdString() + "; Код: " + std::to_string(itemCode_) + "; Цена: "
     + std::to_string(itemPrice_) + "; Число: " + std::to_string(itemNum_);
 }
 
-std::istream& operator>>(std::ifstream &input, product& item){
+std::istream& operator>>(std::ifstream &input, Product& item){
     std::string name;
     std::string type;
     unsigned int code;
@@ -33,13 +33,13 @@ std::istream& operator>>(std::ifstream &input, product& item){
     unsigned int num;
     input >> name >> type >> code >> price >> num;
 
-    item = product(QString::fromStdString(name), QString::fromStdString(type), code,price, num);
+    item = Product(QString::fromStdString(name), QString::fromStdString(type), code,price, num);
     return input;
 }
 
-void getFileInfo(std::vector<product>& itemList,const std::string& fileName){
+void getFileInfo(std::vector<Product>& itemList,const std::string& fileName){
     std::ifstream file(fileName);
-    product temp_item;
+    Product temp_item;
     while(file >> temp_item){
         itemList.push_back(temp_item);
     }

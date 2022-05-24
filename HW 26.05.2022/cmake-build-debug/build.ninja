@@ -81,6 +81,22 @@ build CMakeFiles/HW_26_05_2022.dir/mainwidget.cpp.obj: CXX_COMPILER__HW_26_05_20
   OBJECT_DIR = CMakeFiles\HW_26_05_2022.dir
   OBJECT_FILE_DIR = CMakeFiles\HW_26_05_2022.dir
 
+build CMakeFiles/HW_26_05_2022.dir/searchedwidget.cpp.obj: CXX_COMPILER__HW_26_05_2022_Debug C$:/Proga$ for$ BSU/BSU-SecondTerm/HW$ 26.05.2022/searchedwidget.cpp || cmake_object_order_depends_target_HW_26_05_2022
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles\HW_26_05_2022.dir\searchedwidget.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/cmake-build-debug/HW_26_05_2022_autogen/include" -isystem C:/Qt/5.15.2/mingw81_64/include -isystem C:/Qt/5.15.2/mingw81_64/include/QtCore -isystem C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++ -isystem C:/Qt/5.15.2/mingw81_64/include/QtGui -isystem C:/Qt/5.15.2/mingw81_64/include/QtANGLE -isystem C:/Qt/5.15.2/mingw81_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\HW_26_05_2022.dir
+  OBJECT_FILE_DIR = CMakeFiles\HW_26_05_2022.dir
+
+build CMakeFiles/HW_26_05_2022.dir/addDialog.cpp.obj: CXX_COMPILER__HW_26_05_2022_Debug C$:/Proga$ for$ BSU/BSU-SecondTerm/HW$ 26.05.2022/addDialog.cpp || cmake_object_order_depends_target_HW_26_05_2022
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles\HW_26_05_2022.dir\addDialog.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/cmake-build-debug/HW_26_05_2022_autogen/include" -isystem C:/Qt/5.15.2/mingw81_64/include -isystem C:/Qt/5.15.2/mingw81_64/include/QtCore -isystem C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++ -isystem C:/Qt/5.15.2/mingw81_64/include/QtGui -isystem C:/Qt/5.15.2/mingw81_64/include/QtANGLE -isystem C:/Qt/5.15.2/mingw81_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\HW_26_05_2022.dir
+  OBJECT_FILE_DIR = CMakeFiles\HW_26_05_2022.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target HW_26_05_2022
@@ -89,7 +105,7 @@ build CMakeFiles/HW_26_05_2022.dir/mainwidget.cpp.obj: CXX_COMPILER__HW_26_05_20
 #############################################
 # Link the executable HW_26_05_2022.exe
 
-build HW_26_05_2022.exe: CXX_EXECUTABLE_LINKER__HW_26_05_2022_Debug CMakeFiles/HW_26_05_2022.dir/HW_26_05_2022_autogen/mocs_compilation.cpp.obj CMakeFiles/HW_26_05_2022.dir/main.cpp.obj CMakeFiles/HW_26_05_2022.dir/product.cpp.obj CMakeFiles/HW_26_05_2022.dir/mainwidget.cpp.obj | C$:/Qt/5.15.2/mingw81_64/lib/libQt5Widgets.a C$:/Qt/5.15.2/mingw81_64/lib/libQt5Gui.a C$:/Qt/5.15.2/mingw81_64/lib/libQt5Core.a || HW_26_05_2022_autogen HW_26_05_2022_autogen_timestamp_deps
+build HW_26_05_2022.exe: CXX_EXECUTABLE_LINKER__HW_26_05_2022_Debug CMakeFiles/HW_26_05_2022.dir/HW_26_05_2022_autogen/mocs_compilation.cpp.obj CMakeFiles/HW_26_05_2022.dir/main.cpp.obj CMakeFiles/HW_26_05_2022.dir/product.cpp.obj CMakeFiles/HW_26_05_2022.dir/mainwidget.cpp.obj CMakeFiles/HW_26_05_2022.dir/searchedwidget.cpp.obj CMakeFiles/HW_26_05_2022.dir/addDialog.cpp.obj | C$:/Qt/5.15.2/mingw81_64/lib/libQt5Widgets.a C$:/Qt/5.15.2/mingw81_64/lib/libQt5Gui.a C$:/Qt/5.15.2/mingw81_64/lib/libQt5Core.a || HW_26_05_2022_autogen HW_26_05_2022_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = C:/Qt/5.15.2/mingw81_64/lib/libQt5Widgets.a  C:/Qt/5.15.2/mingw81_64/lib/libQt5Gui.a  C:/Qt/5.15.2/mingw81_64/lib/libQt5Core.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\HW_26_05_2022.dir
@@ -132,7 +148,7 @@ build HW_26_05_2022_autogen_timestamp_deps: phony CMakeFiles/HW_26_05_2022_autog
 #############################################
 # Utility command for HW_26_05_2022_autogen
 
-build HW_26_05_2022_autogen: phony CMakeFiles/HW_26_05_2022_autogen HW_26_05_2022_autogen/include/ui_mainWidget.h HW_26_05_2022_autogen/timestamp HW_26_05_2022_autogen/mocs_compilation.cpp HW_26_05_2022_autogen_timestamp_deps
+build HW_26_05_2022_autogen: phony CMakeFiles/HW_26_05_2022_autogen HW_26_05_2022_autogen/include/ui_mainWidget.h HW_26_05_2022_autogen/include/ui_searchedWidget.h HW_26_05_2022_autogen/timestamp HW_26_05_2022_autogen/mocs_compilation.cpp HW_26_05_2022_autogen_timestamp_deps
 
 
 #############################################
@@ -148,13 +164,13 @@ build HW_26_05_2022_autogen/timestamp HW_26_05_2022_autogen/mocs_compilation.cpp
 #############################################
 # Phony custom command for CMakeFiles\HW_26_05_2022_autogen_timestamp_deps
 
-build CMakeFiles/HW_26_05_2022_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/HW_26_05_2022_autogen_timestamp_deps: phony C$:/Qt/5.15.2/mingw81_64/bin/Qt5Widgets.dll C$:/Qt/5.15.2/mingw81_64/bin/Qt5Core.dll C$:/Qt/5.15.2/mingw81_64/bin/moc.exe C$:/Qt/5.15.2/mingw81_64/bin/Qt5Gui.dll C$:/Qt/5.15.2/mingw81_64/bin/uic.exe
+build CMakeFiles/HW_26_05_2022_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/HW_26_05_2022_autogen_timestamp_deps: phony C$:/Qt/5.15.2/mingw81_64/bin/Qt5Gui.dll C$:/Qt/5.15.2/mingw81_64/bin/Qt5Widgets.dll C$:/Qt/5.15.2/mingw81_64/bin/Qt5Core.dll C$:/Qt/5.15.2/mingw81_64/bin/uic.exe C$:/Qt/5.15.2/mingw81_64/bin/moc.exe
 
 
 #############################################
 # Phony custom command for CMakeFiles\HW_26_05_2022_autogen
 
-build CMakeFiles/HW_26_05_2022_autogen HW_26_05_2022_autogen/include/ui_mainWidget.h | ${cmake_ninja_workdir}CMakeFiles/HW_26_05_2022_autogen ${cmake_ninja_workdir}HW_26_05_2022_autogen/include/ui_mainWidget.h: phony HW_26_05_2022_autogen/timestamp || HW_26_05_2022_autogen_timestamp_deps
+build CMakeFiles/HW_26_05_2022_autogen HW_26_05_2022_autogen/include/ui_mainWidget.h HW_26_05_2022_autogen/include/ui_searchedWidget.h | ${cmake_ninja_workdir}CMakeFiles/HW_26_05_2022_autogen ${cmake_ninja_workdir}HW_26_05_2022_autogen/include/ui_mainWidget.h ${cmake_ninja_workdir}HW_26_05_2022_autogen/include/ui_searchedWidget.h: phony HW_26_05_2022_autogen/timestamp || HW_26_05_2022_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

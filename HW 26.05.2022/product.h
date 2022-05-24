@@ -1,7 +1,6 @@
 #ifndef HW_26_05_2022_PRODUCT_H
 #define HW_26_05_2022_PRODUCT_H
 
-
 #include <string>
 #include <list>
 #include <istream>
@@ -9,7 +8,7 @@
 #include <vector>
 #include <QString>
 
-class product {
+class Product {
 private:
     QString itemName_;
     QString itemType_;
@@ -17,10 +16,10 @@ private:
     unsigned int itemPrice_;
     unsigned int itemNum_;
 public:
-    product(QString prodName,QString prodType , unsigned int prodCode, unsigned int prodPrice, unsigned int prodNum) :
+    Product(QString prodName,QString prodType , unsigned int prodCode, unsigned int prodPrice, unsigned int prodNum) :
             itemName_(prodName), itemType_(prodType),
             itemCode_(prodCode), itemPrice_(prodPrice), itemNum_(prodNum){};
-    product() = default;
+    Product() = default;
 
     QString getName();
     QString getType();
@@ -33,7 +32,7 @@ public:
 protected:
 };
 
-std::istream& operator>>(std::ifstream &, product&);
-void getFileInfo(std::vector<product>&,const std::string&);
+std::istream& operator>>(std::ifstream &, Product&);
+void getFileInfo(std::vector<Product>&,const std::string&);
 
 #endif //HW_26_05_2022_PRODUCT_H

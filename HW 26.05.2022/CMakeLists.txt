@@ -14,7 +14,7 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(HW_26_05_2022 main.cpp product.cpp product.h mainwidget.cpp mainwidget.h mainwidget.ui)
+add_executable(HW_26_05_2022 main.cpp product.cpp product.h mainwidget.cpp mainwidget.h mainwidget.ui searchedwidget.cpp searchedwidget.h searchedwidget.ui addDialog.cpp addDialog.h)
 target_link_libraries(HW_26_05_2022
         Qt5::Core
         Qt5::Gui

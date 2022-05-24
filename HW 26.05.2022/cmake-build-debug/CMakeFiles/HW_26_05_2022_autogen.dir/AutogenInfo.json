@@ -79,6 +79,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/addDialog.h",
+			"MU",
+			"EWIEGA46WW/moc_addDialog.cpp",
+			null
+		],
+		[
 			"C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/mainwidget.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwidget.cpp",
@@ -88,6 +94,12 @@
 			"C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/product.h",
 			"MU",
 			"EWIEGA46WW/moc_product.cpp",
+			null
+		],
+		[
+			"C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/searchedwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_searchedwidget.cpp",
 			null
 		]
 	],
@@ -142,6 +154,11 @@
 	"SETTINGS_FILE" : "C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/cmake-build-debug/CMakeFiles/HW_26_05_2022_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/addDialog.cpp",
+			"MU",
+			null
+		],
 		[ "C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/main.cpp", "MU", null ],
 		[
 			"C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/mainwidget.cpp",
@@ -150,6 +167,11 @@
 		],
 		[
 			"C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/product.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Proga for BSU/BSU-SecondTerm/HW 26.05.2022/searchedwidget.cpp",
 			"MU",
 			null
 		]

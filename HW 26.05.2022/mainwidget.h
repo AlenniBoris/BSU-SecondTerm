@@ -4,21 +4,17 @@
 #include <QWidget>
 #include <QListWidget>
 #include <QBoxLayout>
-#include <QPushButton>
 #include <QLabel>
-#include <QMessageBox>
 #include <QLineEdit>
 #include <QFileDialog>
-#include <QLineEdit>
 #include <vector>
-#include <QTextEdit>
 #include <QString>
-#include "product.h"
-
-
-
 #include <QMenu>
 #include <QMenuBar>
+#include "product.h"
+#include "searchedwidget.h"
+
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class mainWidget; }
@@ -34,7 +30,9 @@ public:
 
 protected slots:
     void loadLogic();
-//
+    void addNew();
+    void deleteItem();
+
     void priceSort();
     void codeSort();
     void typeSort();
@@ -42,12 +40,10 @@ protected slots:
     void srchLogic();
     void srchLessLogic();
 
-
-//    void clrBtnLogic();
 private:
     Ui::mainWidget *ui;
 
-    std::vector<product> products;
+    std::vector<Product> products;
 
     QListWidget* listWidget;
 
@@ -55,12 +51,13 @@ private:
 
     QMenu* fileMenu;
     QAction* loadAct;
+    QAction* addNewAct;
+    QAction* deleteAct;
 
     QMenu* sortMenu;
     QAction* priceSortAct;
     QAction* codeSortAct;
     QAction* typeSortAct;
-
 
     QMenu* srchMenu;
     QAction* srchProdAct;
@@ -72,8 +69,10 @@ private:
     QLabel* lessLbl;
     QLineEdit* lessEdit;
 
-    void printItems();
+    searchedWidget* srchWidget;
+    searchedWidget* lessWidget;
 
+    void printItems();
 };
 
 
