@@ -17,11 +17,11 @@ mainWidget::mainWidget(QWidget *parent) :
 
     loadAct = new QAction("load file", this);
     connect(loadAct, SIGNAL(triggered()), SLOT(loadLogic()));
-    loadAct->setShortcut(tr("CTRL+L"));
+    loadAct->setShortcut(tr("ALT+L"));
 
     addNewAct = new QAction("Add new item", this);
     connect(addNewAct, SIGNAL(triggered()), SLOT(addNew()));
-    addNewAct->setShortcut(tr("CTRL+N"));
+    addNewAct->setShortcut(tr("ALT+N"));
 
     deleteAct = new QAction("Delete item", this);
     connect(deleteAct, SIGNAL(triggered()), SLOT(deleteItem()));
@@ -54,12 +54,12 @@ mainWidget::mainWidget(QWidget *parent) :
 
     srchProdAct = new QAction("Find elements",this);
     connect(srchProdAct, SIGNAL(triggered()), SLOT(srchLogic()));
-    srchProdAct->setShortcut(tr("CTRL+F+P"));
+    srchProdAct->setShortcut(tr("CTRL+F"));
     srchMenu->addAction(srchProdAct);
 
     srchLessAct = new QAction("Find less than", this);
     connect(srchLessAct, SIGNAL(triggered()), SLOT(srchLessLogic()));
-    srchLessAct->setShortcut(tr("CTRL+F+L"));
+    srchLessAct->setShortcut(tr("CTRL+L"));
     srchMenu->addAction(srchLessAct);
 
     nameLbl = new QLabel("Enter name: ");
@@ -161,6 +161,8 @@ void mainWidget::srchLogic() {
         srchWidget->addFinded(QString::fromStdString("Not Found"));
     }
     srchWidget->show();
+    typeEdit->clear();
+    nameEdit->clear();
 }
 
 void mainWidget::srchLessLogic() {
@@ -177,6 +179,7 @@ void mainWidget::srchLessLogic() {
         lessWidget->addFinded(QString::fromStdString("Not Found"));
     }
     lessWidget->show();
+    lessEdit->clear();
 }
 
 void mainWidget::addNew() {
