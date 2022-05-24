@@ -7,22 +7,23 @@
 #include <istream>
 #include <fstream>
 #include <vector>
+#include <QString>
 
 class product {
 private:
-    std::string itemName_;
-    std::string itemType_;
+    QString itemName_;
+    QString itemType_;
     unsigned int itemCode_;
     unsigned int itemPrice_;
     unsigned int itemNum_;
 public:
-    product(const std::string& name, const std::string& type, unsigned int code, unsigned int price, unsigned int num) :
-            itemName_(name), itemType_(type),
-            itemCode_(code), itemPrice_(price), itemNum_(num){};
+    product(QString prodName,QString prodType , unsigned int prodCode, unsigned int prodPrice, unsigned int prodNum) :
+            itemName_(prodName), itemType_(prodType),
+            itemCode_(prodCode), itemPrice_(prodPrice), itemNum_(prodNum){};
     product() = default;
 
-    std::string getName();
-    std::string getType();
+    QString getName();
+    QString getType();
     unsigned int getCode();
     unsigned int getPrice();
     unsigned int getNum();
@@ -32,7 +33,7 @@ public:
 protected:
 };
 
-std::istream& operator>>(std::istream&, product&);
+std::istream& operator>>(std::ifstream &, product&);
 void getFileInfo(std::vector<product>&,const std::string&);
 
 #endif //HW_26_05_2022_PRODUCT_H

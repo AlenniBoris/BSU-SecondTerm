@@ -15,6 +15,11 @@
 #include <QString>
 #include "product.h"
 
+
+
+#include <QMenu>
+#include <QMenuBar>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class mainWidget; }
 QT_END_NAMESPACE
@@ -29,35 +34,45 @@ public:
 
 protected slots:
     void loadLogic();
-
+//
     void priceSort();
     void codeSort();
     void typeSort();
 
-    void srchBtnLogic();
+    void srchLogic();
+    void srchLessLogic();
 
+
+//    void clrBtnLogic();
 private:
     Ui::mainWidget *ui;
 
     std::vector<product> products;
-    std::vector<product> srchVect;
 
     QListWidget* listWidget;
-    QPushButton* load_btn;
 
-    QPushButton* priceSort_btn;
-    QPushButton* codeSort_btn;
-    QPushButton* typeSort_btn;
+    QMenuBar* widgetMenu;
 
-    QLabel* srchName_lbl;
-    QLineEdit* srchName;
+    QMenu* fileMenu;
+    QAction* loadAct;
 
-    QLabel* srchType_lbl;
-    QLineEdit* srchType;
+    QMenu* sortMenu;
+    QAction* priceSortAct;
+    QAction* codeSortAct;
+    QAction* typeSortAct;
 
-    QPushButton* srch_btn;
 
-    void printItems(std::vector<product>&);
+    QMenu* srchMenu;
+    QAction* srchProdAct;
+    QAction* srchLessAct;
+    QLabel* typeLbl;
+    QLineEdit* typeEdit;
+    QLabel* nameLbl;
+    QLineEdit* nameEdit;
+    QLabel* lessLbl;
+    QLineEdit* lessEdit;
+
+    void printItems();
 
 };
 

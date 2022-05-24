@@ -10,39 +10,75 @@ mainWidget::mainWidget(QWidget *parent) :
 
     listWidget = new QListWidget(this);
 
-    load_btn = new QPushButton("Load items",this);
-    connect(load_btn, SIGNAL(clicked()), SLOT(loadLogic()));
+    widgetMenu = new QMenuBar(this);
 
-    priceSort_btn = new QPushButton("Sort by price",this);
-    connect(priceSort_btn, SIGNAL(clicked()), SLOT(priceSort()));
+    // fileMenu - begin
+    fileMenu = new QMenu("File acts");
 
-    codeSort_btn = new QPushButton("Sort by code",this);
-    connect(codeSort_btn, SIGNAL(clicked()), SLOT(codeSort()));
+    loadAct = new QAction("load file", this);
+    connect(loadAct, SIGNAL(triggered()), SLOT(loadLogic()));
+    loadAct->setShortcut(tr("CTRL+L"));
 
-    typeSort_btn = new QPushButton("Sort by type",this);
-    connect(typeSort_btn, SIGNAL(clicked()), SLOT(typeSort()));
+    fileMenu->addAction(loadAct);
 
-    srchName_lbl = new QLabel("Enter name of product",this);
-    srchName = new QLineEdit(this);
+    // fileMenu - end
 
-    srchType_lbl = new QLabel("Enter type of product",this);
-    srchType = new QLineEdit(this);
+    // sortMenu - begin
+    sortMenu = new QMenu("Sort acts");
 
-    srch_btn = new QPushButton("Search", this);
-    connect(srch_btn, SIGNAL(clicked()), SLOT(srchBtnLogic()));
+    priceSortAct = new QAction("Sort by price", this);
+    connect(priceSortAct, SIGNAL(triggered()), SLOT(priceSort()));
+    sortMenu->addAction(priceSortAct);
 
+    codeSortAct = new QAction("Sort by code", this);
+    connect(codeSortAct, SIGNAL(triggered()), SLOT(codeSort()));
+    sortMenu->addAction(codeSortAct);
+
+    typeSortAct = new QAction("Sort by type", this);
+    connect(typeSortAct, SIGNAL(triggered()), SLOT(typeSort()));
+    sortMenu->addAction(typeSortAct);
+    // sortMenu - end
+
+    // search - begin
+    srchMenu = new QMenu("Search acts");
+
+    srchProdAct = new QAction("Find elements",this);
+    connect(srchProdAct, SIGNAL(triggered()), SLOT(srchLogic()));
+    srchProdAct->setShortcut(tr("CTRL+F+P"));
+    srchMenu->addAction(srchProdAct);
+
+    srchLessAct = new QAction("Find less than", this);
+    connect(srchLessAct, SIGNAL(triggered()), SLOT(srchLessLogic()));
+    srchLessAct->setShortcut(tr("CTRL+F+L"));
+    srchMenu->addAction(srchLessAct);
+
+    nameLbl = new QLabel("Enter name: ");
+    nameEdit = new QLineEdit(this);
+    typeLbl = new QLabel("Enter type: ");
+    typeEdit = new QLineEdit(this);
+
+    lessLbl = new QLabel("Enter minimum number: ");
+    lessEdit = new QLineEdit(this);
+
+
+
+
+    // search - end
+
+    //Menu+layout setup
+    widgetMenu->addMenu(fileMenu);
+    widgetMenu->addMenu(sortMenu);
+    widgetMenu->addMenu(srchMenu);
+
+
+    layout->addWidget(widgetMenu);
     layout->addWidget(listWidget);
-    layout->addWidget(load_btn);
-    layout->addWidget(priceSort_btn);
-    layout->addWidget(codeSort_btn);
-    layout->addWidget(typeSort_btn);
-
-    layout->addWidget(srchName_lbl);
-    layout->addWidget(srchName);
-
-    layout->addWidget(srchType_lbl);
-    layout->addWidget(srchType);
-    layout->addWidget(srch_btn);
+    layout->addWidget(nameLbl);
+    layout->addWidget(nameEdit);
+    layout->addWidget(typeLbl);
+    layout->addWidget(typeEdit);
+    layout->addWidget(lessLbl);
+    layout->addWidget(lessEdit);
 }
 
 mainWidget::~mainWidget() {
@@ -52,12 +88,15 @@ mainWidget::~mainWidget() {
 void mainWidget::loadLogic() {
     QString str = QFileDialog::getOpenFileName(0,"Choose File", "","*.txt");
     getFileInfo(products, str.toStdString());
-    printItems(products);
+    typeEdit->clear();
+    nameEdit->clear();
+    lessEdit->clear();
+    printItems();
 }
 
-void mainWidget::printItems(std::vector<product>& itemList) {
+void mainWidget::printItems() {
     listWidget->clear();
-    for (auto product : itemList) {
+    for (auto product : products) {
         QString str(product.showInString().c_str());
         listWidget->addItem(str);
     }
@@ -71,7 +110,7 @@ void mainWidget::priceSort() {
             i = 0;
         }
     }
-    printItems(products);
+    printItems();
 }
 
 void mainWidget::codeSort() {
@@ -82,7 +121,7 @@ void mainWidget::codeSort() {
             i = 0;
         }
     }
-    printItems(products);
+    printItems();
 }
 
 void mainWidget::typeSort() {
@@ -93,18 +132,41 @@ void mainWidget::typeSort() {
             i = 0;
         }
     }
-    printItems(products);
+    printItems();
 }
 
-void mainWidget::srchBtnLogic() {
+void mainWidget::srchLogic() {
+    int count = 0;
     listWidget->clear();
-    QString qName = srchName->text();
-    QString qType = srchType->text();
-    for (int i = 0; i < products.size() - 1; ++i) {
-        if(products[i].getName() == qName.toStdString() && products[i].getType() == qType.toStdString()){
-            srchVect.push_back(products[i]);
+    for (auto product : products) {
+        if (product.getType().contains(typeEdit->text()) && product.getName().contains(nameEdit->text())) {
+            listWidget->addItem(QString::fromStdString(product.showInString()));
+            count++;
+        }
+        else if(!product.getType().contains(typeEdit->text()) || !product.getName().contains(nameEdit->text())){
+            continue;
         }
     }
-    printItems(srchVect);
+    if (count == 0){
+        listWidget->addItem("Not found");
+    }
 }
+
+void mainWidget::srchLessLogic() {
+    int count = 0;
+    listWidget->clear();
+    for (auto product : products) {
+        if (product.getNum() < lessEdit->text().toInt()){
+            listWidget->addItem(QString::fromStdString(product.showInString()));
+            count++;
+        } else{
+            continue;
+        }
+    }
+    if (count == 0){
+        listWidget->clear();
+        listWidget->addItem("Not found");
+    }
+}
+
 
