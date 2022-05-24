@@ -189,7 +189,16 @@ void mainWidget::addNew() {
 }
 
 void mainWidget::deleteItem() {
-    listWidget->clear();
+    int num = listWidget->currentRow();
+    if (num != -1){
+        listWidget->takeItem(num);
+
+        auto iter = products.begin();
+        for (int i = 0; i != num; ++i) {
+            iter++;
+        }
+        products.erase(iter);
+    }
 }
 
 
